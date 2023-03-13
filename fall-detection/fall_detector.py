@@ -19,13 +19,14 @@ except RuntimeError:
 
 class FallDetector:
     def __init__(self, t=DEFAULT_CONSEC_FRAMES):
-        self.consecutive_frames = t
-        self.args = self.cli()
+        self.consecutive_frames = t  # Number of consecutive frames to be considered as a fall
+        self.args = self.cli()  # Parse the arguments
 
     def cli(self):
+        # Parse the arguments
         parser = argparse.ArgumentParser(
             description=__doc__,
-            formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+            formatter_class=argparse.ArgumentDefaultsHelpFormatter, 
         )
 
         openpifpaf.network.Factory.cli(parser)
