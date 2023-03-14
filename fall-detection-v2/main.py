@@ -148,7 +148,7 @@ if __name__ == '__main__':
             bbox = track.to_tlbr().astype(int)  # Get the corrected/predicted bbox
             center = track.get_center().astype(int) # Get the center point
 
-            action = 'pending..'    # Default action when not enough data.
+            action = 'Pending..'    # Default action when not enough data.
             clr = (0, 255, 0)   # Default color is green.
             # Use 30 frames time-steps to prediction.
             if len(track.keypoints_list) == 30: # Enough data for prediction.
@@ -168,9 +168,15 @@ if __name__ == '__main__':
                             writer.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
                 elif action_name == 'Lying Down':   # Set color to yellow if action is lying down.
                     clr = (255, 200, 0)
-                    
-          
-                    
+                elif action_name == 'Sitting':
+                    clr = (0, 0, 255) #color for sitting down is blue
+                elif action_name == 'Stand Up':
+                    clr = (0, 255, 0) #color for standing up is green which is default
+                elif action_name == 'Walking':
+                    clr = (255, 0, 255) #color for walking is purple
+                elif action_name == "Standing":
+                    clr = (0, 255, 255) #color for standing is yellow
+                       
             # VISUALIZE.
             if track.time_since_update == 0:    # Draw only the last bbox of the track.
                 if args.show_skeleton:  # Show skeleton.
