@@ -8,7 +8,8 @@ from .iou_matching import iou_cost
 
 
 class TrackState:
-    """Enumeration type for the single target track state. Newly created tracks are
+    """
+    Enumeration type for the single target track state. Newly created tracks are
     classified as `tentative` until enough evidence has been collected. Then,
     the track state is changed to `confirmed`. Tracks that are no longer alive
     are classified as `deleted` to mark them for removal from the set of active
