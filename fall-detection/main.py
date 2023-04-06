@@ -19,8 +19,9 @@ from ActionsEstLoader import TSSTG
 
 #source = '../Data/test_video/test7.mp4'
 #source = '../Data/falldata/Home/Videos/video (2).avi'  # hard detect
-source = '../Data/falldata/Home/Videos/video (1).avi'
+# source = '../Data/falldata/Home/Videos/video (1).avi'
 #source = 2
+
 
 def preproc(image):
     """
@@ -42,7 +43,7 @@ def kpt2bbox(kpt, ex=20):
 
 if __name__ == '__main__':
     par = argparse.ArgumentParser(description='Human Fall Detection Demo.')
-    par.add_argument('-C', '--camera', default=source,  # required=True,  # default=2,
+    par.add_argument('-C', '--camera', default="0",  # required=True,  # default=2,
                         help='Source of camera or video file path.')    # 0: webcam, 1: usb cam, 2: ip cam, 3: rtsp cam.
     par.add_argument('--detection_input_size', type=int, default=384,
                         help='Size of input in detection model in square must be divisible by 32 (int).') # 320, 416, 512, 608.
@@ -158,10 +159,10 @@ if __name__ == '__main__':
                 action = '{}: {:.2f}%'.format(action_name, out[0].max() * 100)  # Set action text.
                 if action_name == 'Fall Down':  # Set color to red if action is fall down.
                     clr = (255, 0, 0)   # Set color to red.
-                    if not os.path.exists('fall_data.csv'):
+                    if not os.path.exists('fall_data.csv'): # if file does not exist write header
                         with open('fall_data.csv', 'w', newline='') as file:
-                            writer = csv.writer(file)
-                            writer.writerow(["Frame", "Fall", "Fall Prob", "Fall Prob Threshold", "Time Stamp"])
+                                writer = csv.writer(file)
+                                writer.writerow(["Frame", "Fall", "Fall Prob", "Fall Prob Threshold", "Time Stamp"])                               
                     else:
                         with open('fall_data.csv', 'a', newline='') as file: # a for append
                             writer = csv.writer(file)
