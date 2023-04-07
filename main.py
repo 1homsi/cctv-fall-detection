@@ -1,2 +1,10 @@
+import sys
+sys.path.append('./emotion-detection')
+sys.path.append('./fall-detection')
+
+import Feed
+
+
 if __name__ == '__main__':
-    print('This is the main.py file')
+    # call the function
+    Feed.emotion()
