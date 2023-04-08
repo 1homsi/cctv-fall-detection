@@ -3,8 +3,7 @@ import cv2
 from initModel import model
 
 
-mode = "display"
-if mode == "display":
+def emotion():
     model.load_weights('./modules/model.h5')
 
     # prevents openCL usage and unnecessary logging messages
@@ -38,3 +37,6 @@ if mode == "display":
 
     cap.release()
     cv2.destroyAllWindows()
+
+
+emotion()
