@@ -1,0 +1,177 @@
+.ContainerLanding {
+  height: auto;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+.BannerLanding {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.BannerLanding button {
+  width: 100px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #303030;
+  border-radius: 5px;
+  color: #303030;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.BannerLanding button:hover {
+  background-color: #303030;
+  color: #fff;
+}
+
+.landing-text {
+  width: 40%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 55%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img {
+  width: 80%;
+  height: 70%;
+}
+
+.landing-text h1 {
+  font-size: 1.5rem;
+  color: #303030;
+  font-weight: 700;
+  text-align: center;
+}
+
+.landing-text h4 {
+  font-size: 1.2rem;
+  color: #717171;
+  font-weight: 400;
+  text-align: center;
+}
+
+.sec2InLanding {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sec2InLanding-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec2InLanding-left img,
+.sec2InLanding-right img {
+  width: 80%;
+  height: 80%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.sec2InLanding-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.sec2InLanding-left h4 {
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .ContainerLanding {
+    width: auto;
+    overflow-x: hidden !important;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .BannerLanding {
+    height: 100vh;
+    width: auto;
+    overflow-y: hidden !important;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .landing-text {
+    width: 80%;
+    height: 40%;
+  }
+
+  .landing-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .landing-text h4 {
+    font-size: 0.8rem;
+  }
+  .right,
+  .right img {
+    display: none;
+  }
+  .sec2InLanding {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  .sec2InLanding-left,
+  .sec2InLanding-left img {
+    width: 80%;
+    height: 70%;
+  }
+  .sec2InLanding-right {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec2InLanding-right h1 {
+    font-size: 1.2rem;
+  }
+  .sec2InLanding-right h4 {
+    font-size: 0.8rem;
+  }
+  .sec2InLanding-left h1 {
+    font-size: 1.2rem;
+  }
+  .sec2InLanding-left h4 {
+    font-size: 0.8rem;
+  }
+}
