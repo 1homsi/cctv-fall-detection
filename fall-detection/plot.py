@@ -65,6 +65,7 @@ for name, group in grouped:
 # print("Contents in csv file:", df)
 plt.plot(df["Frame"], df["Fall Prob"], label="Fall Prob", color="red" ) # plot fall probability
 plt.plot(df["Frame"], df["Fall"], label="Fell") # plot fall
+
 """
 plt.plot(df["Frame"], df["Fall Prob Threshold"], label="Fall Prob Threshold") 
 plot fall probability threshold defaults to 0.5 unless changed or error occurs
