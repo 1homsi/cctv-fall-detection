@@ -7,7 +7,6 @@ plt.rcParams["figure.autolayout"] = True # adjust subplot params so that the sub
 columns = ["Frame", "Fall", "Fall Prob", "Fall Prob Threshold", "Time Stamp"] # columns to read from csv file
 df = pd.read_csv("fall_data.csv", usecols=columns)  # read csv file
 
-
 df["Time Stamp"] = pd.to_datetime(df["Time Stamp"])
 
 # Calculate the time difference between consecutive frames
@@ -60,7 +59,6 @@ for name, group in grouped:
 #                 print("The time difference between these frames is",pd.to_datetime(df["Time Stamp"][i]) - pd.to_datetime(df["Time Stamp"][i-1]), "seconds")
 #                 print("The time difference between these frames should be 0.033 seconds")
 #                 print("")    
-                
                 
 # print("Contents in csv file:", df)
 plt.plot(df["Frame"], df["Fall Prob"], label="Fall Prob", color="red" ) # plot fall probability
