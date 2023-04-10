@@ -1,12 +1,13 @@
 .ContainerLanding {
   height: auto;
-  width: 100vw;
+  width: 98vw;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .BannerLanding {
   height: 100vh;

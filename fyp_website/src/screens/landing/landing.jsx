@@ -40,7 +40,7 @@ export default function Landing({navigate}) {
                 Always Watching, Always Protecting
                 </h1>
                 <h4>
-                WatchGuard AI is an intelligent and reliable AI system that constantly monitors your surroundings to ensure your safety and protection. 
+                WatchGuard is an intelligent and reliable system that constantly monitors your surroundings to ensure your safety and protection. 
                 </h4>
                 <div className="startBTN" >
                     <button className="startBTN" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} onMouseDown={() => setIsPress(true)} onMouseUp={() => setIsPress(false)} >
@@ -60,7 +60,7 @@ export default function Landing({navigate}) {
                 <div className="sec2InLanding-right" >
                     <h1>Emotion Detection</h1>
                     <h4 style={{fontWeight: "400"}} >
-                    WatchGuard AI emotion detection is an advanced artificial intelligence system that uses cutting-edge technology to accurately detect and interpret human emotions. With its powerful algorithms and advanced machine learning capabilities, WatchGuard AI is capable of identifying a wide range of emotions, including joy, sadness, anger, fear, and more. Whether you are looking to improve your customer service, enhance your marketing campaigns, or simply gain a better understanding of your audience, WatchGuard AI can provide you with the insights you need to succeed. So why wait? Try WatchGuard AI emotion detection today and start unlocking the power of emotional intelligence!
+                    WatchGuard emotion detection is an advanced artificial intelligence system that uses cutting-edge technology to accurately detect and interpret human emotions. With its powerful algorithms and advanced machine learning capabilities, WatchGuard AI is capable of identifying a wide range of emotions, including joy, sadness, anger, fear, and more. Whether you are looking to improve your customer service, enhance your marketing campaigns, or simply gain a better understanding of your audience, WatchGuard AI can provide you with the insights you need to succeed. So why wait? Try WatchGuard AI emotion detection today and start unlocking the power of emotional intelligence!
                     </h4>
                 </div>
             </div>
@@ -69,7 +69,7 @@ export default function Landing({navigate}) {
                 <div className="sec2InLanding-left" >
                 <h1>Fall Detection</h1>
                     <h4 style={{fontWeight: "400"}} >
-                    WatchGuard AI Fall Detection is an advanced artificial intelligence system that is designed to detect and alert caregivers and staff to falls that have already occurred. Using sophisticated algorithms and machine learning techniques, it can analyze movements and behaviors in real-time and alert the appropriate personnel if a fall is detected. While it does not prevent falls from happening, WatchGuard AI Fall Detection can provide a critical response in the event of a fall, allowing for timely assistance and potentially minimizing the severity of injuries. Whether you're a caregiver or a staff member in a public space, WatchGuard AI Fall Detection can provide an added layer of safety and security for those who may be at risk of falling.
+                    WatchGuard Fall Detection is an advanced artificial intelligence system that is designed to detect and alert caregivers and staff to falls that have already occurred. Using sophisticated algorithms and machine learning techniques, it can analyze movements and behaviors in real-time and alert the appropriate personnel if a fall is detected. While it does not prevent falls from happening, WatchGuard AI Fall Detection can provide a critical response in the event of a fall, allowing for timely assistance and potentially minimizing the severity of injuries. Whether you're a caregiver or a staff member in a public space, WatchGuard AI Fall Detection can provide an added layer of safety and security for those who may be at risk of falling.
                     </h4>
                     
                 </div>
