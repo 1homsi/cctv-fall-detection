@@ -44,8 +44,8 @@ def Close():
     VideoCamera().close_camera() #close the camera
     print("Camera Closed")
     
-
-def start_app():
+    
+if __name__ == "__main__":
     # Start the server 
     try:
         eel.init('client') # path to project folder 
@@ -56,7 +56,3 @@ def start_app():
         show_error(title='Failed to initialise server',
                    msg=err_msg) #use tkinter to show error message
         sys.exit()
-
-
-if __name__ == "__main__":
-    start_app() # Call the start app function
