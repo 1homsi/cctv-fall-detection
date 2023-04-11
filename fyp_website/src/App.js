@@ -9,6 +9,9 @@ import Products from "./screens/products/products";
 //navbar
 import Nav from "./Navbar/nav";
 
+//footer
+import Footer from "./footer/footer";
+
 function App() {
   let navigate = useNavigate();
 
@@ -20,6 +23,7 @@ function App() {
         <Route path="/about" element={<About navigate={navigate} />} />
         <Route path="/products" element={<Products navigate={navigate} />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
