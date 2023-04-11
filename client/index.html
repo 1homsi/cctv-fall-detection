@@ -3,15 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>WatchGaurd</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Special Topics in Computer Science</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/Images/Nassim.jpeg">
 </head>
 <script type="text/javascript" src="eel.js"></script>
-<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="index.js"></script>
 
 <body>
-    <h1>Hello world</h1>
+    <div id="Head">
+        <h3 id="title">Emotion Detection</h3>
+        <ul id="Nav">
+            <li><a href="index.html">Detect |</a></li>
+            <li><a href="train.html" onclick="Temrinate()">| Train</a></li>
+        </ul>
+    </div>
+    <div id="image-container">
+        <img id="bg" src="./Images/Nassim.jpeg" alt="" width="600" height="450">
+    </div>
+    <div id="bottom">
+        <button onclick="py_video()">Open feed</button>
+        <button style="margin-left: 10px;" onclick="closeConnection()">Close feed</button>
+    </div>
 </body>
 
 </html>
