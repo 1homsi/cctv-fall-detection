@@ -55,7 +55,7 @@ if __name__ == '__main__':
                         help='Show all bounding box from detection.')   # show all bounding box from detection.
     par.add_argument('--show_skeleton', default=True, action='store_true',
                         help='Show skeleton pose.')  # show skeleton pose.
-    par.add_argument('--save_out', type=str, default='',
+    par.add_argument('--save_out', type=str, default='fall.mp4v',
                         help='Save display to video file.') # Save display to video file.
     par.add_argument('--device', type=str, default='cuda',
                         help='Device to run model on cpu or cuda.') # cpu or cuda.
@@ -99,7 +99,7 @@ if __name__ == '__main__':
     outvid = False
     if args.save_out != '':
         outvid = True
-        codec = cv2.VideoWriter_fourcc(*'MJPG') # 'x264' doesn't work
+        codec = cv2.VideoWriter_fourcc(*'mp4v') # 'x264' doesn't work
         writer = cv2.VideoWriter(args.save_out, codec, 30, (inp_dets * 2, inp_dets * 2)) # (w, h)
 
     fps_time = 0
@@ -153,8 +153,8 @@ if __name__ == '__main__':
             clr = (0, 255, 0)   # Default color is green.
             if not os.path.exists('extra_data.csv'): # if file does not exist write header
                     with open('extra_data.csv', 'w', newline='') as file:
-                        writer = csv.writer(file)
-                        writer.writerow(["Frame", "Action", "Probability", "Action Prob Threshold", "Time Stamp"])      
+                        csvWriter = csv.writer(file)
+                        csvWriter.writerow(["Frame", "Action", "Probability", "Action Prob Threshold", "Time Stamp"])      
             # Use 30 frames time-steps to prediction.
             if len(track.keypoints_list) == 30: # Enough data for prediction.
                 pts = np.array(track.keypoints_list, dtype=np.float32)
@@ -165,37 +165,37 @@ if __name__ == '__main__':
                     clr = (255, 0, 0)   # Set color to red.
                     if not os.path.exists('fall_data.csv'): # if file does not exist write header
                         with open('fall_data.csv', 'w', newline='') as file:
-                            writer = csv.writer(file)
-                            writer.writerow(["Frame", "Fall", "Fall Prob", "Fall Prob Threshold", "Time Stamp"])      
+                            csvWriter = csv.writer(file)
+                            csvWriter.writerow(["Frame", "Fall", "Fall Prob", "Fall Prob Threshold", "Time Stamp"])      
                     else:
                         with open('fall_data.csv', 'a', newline='') as file: # a for append
-                            writer = csv.writer(file)
-                            writer.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
+                            csvWriter = csv.writer(file)
+                            csvWriter.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
                 elif action_name == 'Lying Down':   # Set color to yellow if action is lying down.
                     clr = (255, 200, 0)
                     with open('extra_data.csv', 'a', newline='') as file:
-                        writer = csv.writer(file)
-                        writer.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
+                        csvWriter = csv.writer(file)
+                        csvWriter.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
                 elif action_name == 'Sitting':
                     clr = (0, 0, 255) #color for sitting down is blue
                     with open('extra_data.csv', 'a', newline='') as file:
-                        writer = csv.writer(file)
-                        writer.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
+                        csvWriter = csv.writer(file)
+                        csvWriter.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
                 elif action_name == 'Stand Up':
                     clr = (0, 255, 0) #color for standing up is green which is default
                     with open('extra_data.csv', 'a', newline='') as file:
-                        writer = csv.writer(file)
-                        writer.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
+                        csvWriter = csv.writer(file)
+                        csvWriter.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
                 elif action_name == 'Walking':
                     clr = (255, 0, 255) #color for walking is purple
                     with open('extra_data.csv', 'a', newline='') as file:
-                        writer = csv.writer(file)
-                        writer.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
+                        csvWriter = csv.writer(file)
+                        csvWriter.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
                 elif action_name == "Standing":
                     clr = (0, 255, 255) #color for standing is yellow
                     with open('extra_data.csv', 'a', newline='') as file:
-                        writer = csv.writer(file)
-                        writer.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
+                        csvWriter = csv.writer(file)
+                        csvWriter.writerow([f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
                        
             # VISUALIZE.
             if track.time_since_update == 0:    # Draw only the last bbox of the track.

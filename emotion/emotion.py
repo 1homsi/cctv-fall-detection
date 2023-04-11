@@ -17,6 +17,8 @@ if not os.path.exists('emotion_data.csv'): # if file does not exist write header
     with open('emotion_data.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(["frame", "emotion", "pixels", "time stamp"])
+        
+        
 
 # Get the full path of the current Python file
 current_file = os.path.abspath(__file__)
