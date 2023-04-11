@@ -8,7 +8,15 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.layers import MaxPooling2D
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import os
+import csv
+import datetime
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' #to suppress some warnings
+
+if not os.path.exists('emotion_data.csv'): # if file does not exist write header
+    with open('emotion_data.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["frame", "emotion", "pixels", "time stamp"])
 
 # Get the full path of the current Python file
 current_file = os.path.abspath(__file__)
@@ -79,7 +87,7 @@ class VideoCamera(object):
         self.video.release() # release the camera
     def get_frame(self):
         isOpened = True # check if camera is open
-        model_file = os.path.join(os.path.dirname(current_file), 'modules', 'model.h5')
+        model_file = os.path.join(os.path.dirname(current_file), 'modules', 'model.h5') # load the model file
         model.load_weights(model_file) # load the weights
         cv.ocl.setUseOpenCL(False) # to avoid error
         emotion_dict = {0: "Angry", 1: "Disgusted", 
@@ -89,7 +97,7 @@ class VideoCamera(object):
         ret, frame = self.video.read() # read the camera
         if not ret: # if not return the frame
             print("Unable to capture video")
-        facecasc_file = os.path.join(os.path.dirname(current_file), 'modules', 'haarcascade_frontalface_default.xml')
+        facecasc_file = os.path.join(os.path.dirname(current_file), 'modules', 'haarcascade_frontalface_default.xml') # load the cascade file
         facecasc = cv.CascadeClassifier(facecasc_file) # load the cascade
         gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY) # convert to grayscale
         faces = facecasc.detectMultiScale(gray,scaleFactor=1.3, minNeighbors=5) # detect the faces and store the positions 
@@ -101,6 +109,9 @@ class VideoCamera(object):
             maxindex = int(np.argmax(prediction)) # get the index of the largest value
             cv.putText(frame, emotion_dict[maxindex], (x+20, y-60), 
                        cv.FONT_HERSHEY_SIMPLEX, 1, (255, 2.55, 255), 2, cv.LINE_AA) # write the emotion text above rectangle
+            with open('emotion_data.csv', 'a', newline='') as file:
+                writer = csv.writer(file)
+                writer.writerow([frame, emotion_dict[maxindex], roi_gray, datetime.datetime.now()])
         ret, jpeg = cv.imencode('.jpg', frame) # encode the frame into jpeg
         if isOpened:
             return jpeg.tobytes() #byte array 64
