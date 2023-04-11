@@ -5,12 +5,6 @@ const py_video = () => {
 };
 
 const closeConnection = () => {
-    const elem = document.getElementById("bg");
-    eel.Close()();
-    elem.src = "./Images/Nassim.jpeg";
-};
-
-const Temrinate = () => {
     eel.Close()();
 };
 
