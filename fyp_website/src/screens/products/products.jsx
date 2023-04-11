@@ -15,7 +15,7 @@ export default function Products() {
   const [isOn, setOn] = useState(true)
   const headerRef = useAnimatedText(isOn ? 8 : 9, transition)
   const toggleSwitch = () => setOn(!isOn);
-  const [monthly, setBilled] = useState(false)
+  const [monthly, setBilled] = useState(true)
 
   const [screen, setScreen] = useState(1)
 
@@ -143,13 +143,16 @@ export default function Products() {
               
             >
               <Button style={{
-                backgroundColor: "#333",
+                backgroundColor: monthly ? "#333" : "#fff",
+                color: monthly ? "#fff" : "#333"
+
               }} 
               
               onClick={() => setBilled(true)}
               >Monthly</Button>
               <Button style={{
-                backgroundColor: "#333",
+                backgroundColor: !monthly ? "#333" : "#fff",
+                color: !monthly ? "#fff" : "#333"
               }} 
               onClick={() => setBilled(false)}
               >Yearly</Button>

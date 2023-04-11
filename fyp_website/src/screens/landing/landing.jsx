@@ -1,9 +1,11 @@
 import "./styles.css";
 import React from "react";
 import "./landing.css"
+import * as THREE from 'three';
+import EyeAnimation from "../../components/eye"
 
 // stuff 
-import { Suspense, useState, useEffect } from "react";
+import { Suspense, useState, useEffect, useRef } from "react";
 import { motion, MotionConfig, useMotionValue } from "framer-motion";
 import { Shapes } from "./Shapes";
 import { transition } from "./settings";
@@ -15,6 +17,7 @@ import sec2 from "../../assets/faceD1.png"
 import sec3 from "../../assets/fallD2.png"
 import why from "../../assets/why.jpeg"
 import vidbanner from "../../assets/vidbanner.mp4"
+import world from "../../assets/world.jpeg"
 
 // for the typing animation
 import { TypeAnimation } from 'react-type-animation';
@@ -32,6 +35,7 @@ export default function Landing({navigate}) {
   const [isPress, setIsPress] = useState(false);
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
+  
 
   const resetMousePosition = () => {
     mouseX.set(0);
@@ -43,7 +47,6 @@ export default function Landing({navigate}) {
             navigate('/products')
         }        
     }, [isPress])
-
 
 
   return (
@@ -133,6 +136,9 @@ export default function Landing({navigate}) {
                 <img src={sec3} alt="sec3" className="sec3-img" />
                 </Tilt>
                 </div>
+            </div>
+            <div>
+                <EyeAnimation />
             </div>
             <div className="blackline"></div>
             <div className="sec2InLanding" >
