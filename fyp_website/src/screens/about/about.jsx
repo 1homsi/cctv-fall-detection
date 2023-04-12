@@ -6,6 +6,7 @@ import Matrix from "../../components/timeline/matrix";
 //team images
 import teamMember1 from '../../assets/jalal.jpeg';
 import teamMember2 from '../../assets/fawzy.jpeg';
+import mohammad from '../../assets/mohammad.png'
 
 
 
@@ -60,22 +61,22 @@ const About = () => {
           <p className="team-member-bio">Fawzy El Mozayen is not only a developer but oversees Sentinel watchgaurd AI's day-to-day operations and ensures that the company runs smoothly.</p>
         </div>
         <div className="team-member">
-          <img src="/images/team-member-3.png" alt="Team Member 3" />
-          <h3 className="team-member-name">David Lee</h3>
-          <p className="team-member-position">Chief Technology Officer</p>
-          <p className="team-member-bio">David Lee is a highly skilled engineer with expertise in AI and computer vision. He leads Sentinel watchgaurd AI's technology development and ensures that the company stays at the forefront of the industry.</p>
+          <img src={mohammad} alt="Team Member 3" />
+          <h3 className="team-member-name">Mohammad Homsi</h3>
+          <p className="team-member-position">Developer & Student at Rafik Hariri University</p>
+          <p className="team-member-bio">Mohammad Homsi is a highly skilled developer with expertise in coding in general.</p>
         </div>
         <div className="team-member">
           <img src="/images/team-member-4.png" alt="Team Member 4" />
-          <h3 className="team-member-name">Lisa Chen</h3>
-          <p className="team-member-position">Chief Marketing Officer</p>
-          <p className="team-member-bio">Lisa Chen is a marketing expert with a passion for driving business growth. She oversees Sentinel watchgaurd AI's marketing strategy and helps to communicate the value of our products to customers.</p>
+          <h3 className="team-member-name">Sara Baassiri</h3>
+          <p className="team-member-position">Developer & Student at Rafik Hariri University</p>
+          <p className="team-member-bio">Sara provided help to the team she helped in both emotion and fall detection and helped in building the website.</p>
         </div>
         <div className="team-member">
           <img src="/images/team-member-4.png" alt="Team Member 4" />
-          <h3 className="team-member-name">Lisa Chen</h3>
-          <p className="team-member-position">Chief Marketing Officer</p>
-          <p className="team-member-bio">Lisa Chen is a marketing expert with a passion for driving business growth. She oversees Sentinel watchgaurd AI's marketing strategy and helps to communicate the value of our products to customers.</p>
+          <h3 className="team-member-name">Bilal Jibaly</h3>
+          <p className="team-member-position">Developer & Student at Rafik Hariri University</p>
+          <p className="team-member-bio">Bilal Jibaly is a highly skilled developer with expertise in coding in general.</p>
         </div>
       </div>
     </div>

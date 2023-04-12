@@ -67,17 +67,9 @@ export default function Landing({navigate}) {
                         wrapper="h1" // Animation will be rendered as a <span>
                         repeat={Infinity} // Repeat this Animation Sequence infinitely
                     />
-                    <TypeAnimation
-                        sequence={[
-                        'Sentinel watchgaurd is an intelligent and reliable system that constantly monitors your surroundings to ensure your safety and protection. ',
-                        1000,
-                        
-                        ]}
-                        speed={70} // Custom Speed from 1-99 - Default Speed: 40
-                        style={{ fontSize: '2em' }}
-                        wrapper="h4" // Animation will be rendered as a <span>
-                        repeat={1} // Repeat this Animation Sequence infinitely
-                    />
+                    <h4>
+                    Sentinel watchgaurd is an intelligent and reliable system that constantly monitors your surroundings to ensure your safety and protection. 
+                    </h4>
                     
                     <div className="startBTN">
                     <button className="startBTN" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} onMouseDown={() => setIsPress(true)} onMouseUp={() => setIsPress(false)}>
@@ -114,7 +106,7 @@ export default function Landing({navigate}) {
             <div className="blackline"></div>
             <div className="sec2InLanding"
             style={{
-                backgroundColor: "#333",
+                backgroundColor: "#636262",
                 color: "#fff"
             }}
             >
