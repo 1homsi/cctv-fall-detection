@@ -37,6 +37,7 @@ def kpt2bbox(kpt, ex=20):
 
 class FallDetector:
     def __init__(self):
+        self.stop = False
         self.cam_source = "0"  # 0: webcam, 1: usb cam, 2: ip cam, 3: rtsp cam.
         self.detection_input_size = 384  # 320, 416, 512, 608.
         self.pose_input_size = "224x160"  # 256x192, 384x288, 512x384, 640x480, 736x736, 800x608.
@@ -203,9 +204,8 @@ class FallDetector:
 
             cv2.imshow('frame', frame)  # Show frame.
 
-            if cv2.waitKey(1) & 0xFF == ord('q'):   # Press q to
+            if self.stop:
                 self.close()
-                break
                 
     def close(self):
     # Clear resource.
@@ -213,6 +213,4 @@ class FallDetector:
         if self.outvid:  # Release video writer.
             self.writer.release()    # Release video writer.
         cv2.destroyAllWindows() # Close all windows.
-
-x = FallDetector()
-x.Run()
+        self.stop = True    # Stop thread.
