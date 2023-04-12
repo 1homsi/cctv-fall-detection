@@ -36,7 +36,7 @@ def kpt2bbox(kpt, ex=20):
                      kpt[:, 0].max() + ex, kpt[:, 1].max() + ex))   # (left, top, right, bottom)
 
 class FallDetector:
-    isOpened = False
+    isOpened = True
     def __init__(self):
         self.stop = False
         self.cam_source = "0"  # 0: webcam, 1: usb cam, 2: ip cam, 3: rtsp cam.
@@ -90,9 +90,15 @@ class FallDetector:
         self.f = 0
         
     def get_frame(self):
+        isOpened = True
         while self.cam.grabbed():    # Loop until stop.
             self.f += 1
             frame = self.cam.getitem()   # Get frame from camera loader.
+            if frame is None:
+                isOpened = False
+                self.stop = True
+                self.close()
+                break
             image = frame.copy()    # Copy frame for display.
 
             # Detect humans bbox in the frame with detector model.

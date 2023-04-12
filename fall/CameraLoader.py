@@ -46,13 +46,15 @@ class CamLoader:
     def update(self):
         while not self.stopped:
             ret, frame = self.stream.read()
-            self.read_lock.acquire()
-            self.ori_frame = frame.copy()
-            if ret and self.preprocess_fn is not None:
-                frame = self.preprocess_fn(frame)
-
-            self.ret, self.frame = ret, frame
-            self.read_lock.release()
+            if frame is not None:
+                self.read_lock.acquire()
+                self.ori_frame = frame.copy()
+                if self.preprocess_fn is not None:
+                    frame = self.preprocess_fn(frame)
+                self.ret, self.frame = ret, frame
+                self.read_lock.release()
+            else:
+                self.ret = False
 
     def grabbed(self):
         """Return `True` if can read a frame."""

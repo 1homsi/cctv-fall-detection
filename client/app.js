@@ -4,8 +4,16 @@ const py_video = () => {
     eel.video_feed()();
 };
 
+const py_video_fall = () => {
+    eel.detectFallFeed()();
+};
+
 const closeConnection = () => {
     eel.Close()();
+};
+
+const closeFallConnection = () => {
+    eel.CloseDetector()();
 };
 
 const TrainModel = async () => {
@@ -20,3 +28,5 @@ function updateImageSrc(val) {
     let elem = document.getElementById("bg");
     elem.src = "data:image/jpeg;base64," + val;
 }
+
+

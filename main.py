@@ -10,6 +10,10 @@ sys.path.append(os.path.abspath(''))
 
 from emotion.emotion import *
 from fall.fall import *
+# from FallEmotion.mix import *
+
+# Disable the ability to resize the window and set the window size to 800x600
+window_size = (800, 600)
 
 def show_error(title, msg):
     root = Tk() # create a tkinter window
@@ -56,11 +60,15 @@ def detectFallFeed():
     else:
         print("Fall Detector is not opened")
         
+@eel.expose
+def CloseDetector():
+    FallDetector().close()   # close the camera
+        
 if __name__ == "__main__":
     # Start the server 
     try:
         eel.init('client') # path to project folder 
-        eel.start('index.html') # start the web app with the main file index.html                
+        eel.start('index.html', size=window_size)
     except Exception as e: 
         err_msg = 'Could not launch a local server' # error message
         logging.error('{}\n{}'.format(err_msg, e.args))
