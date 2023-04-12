@@ -7,6 +7,7 @@ import Matrix from "../../components/timeline/matrix";
 import teamMember1 from '../../assets/jalal.jpeg';
 import teamMember2 from '../../assets/fawzy.jpeg';
 import mohammad from '../../assets/mohammad.png'
+import sara from "../../assets/sara.jpeg"
 
 
 
@@ -67,13 +68,13 @@ const About = () => {
           <p className="team-member-bio">Mohammad Homsi is a highly skilled developer with expertise in coding in general.</p>
         </div>
         <div className="team-member">
-          <img src="/images/team-member-4.png" alt="Team Member 4" />
+          <img src={sara} alt="Team Member 4" />
           <h3 className="team-member-name">Sara Baassiri</h3>
           <p className="team-member-position">Developer & Student at Rafik Hariri University</p>
           <p className="team-member-bio">Sara provided help to the team she helped in both emotion and fall detection and helped in building the website.</p>
         </div>
         <div className="team-member">
-          <img src="/images/team-member-4.png" alt="Team Member 4" />
+          <img src={teamMember2} alt="Team Member 4" />
           <h3 className="team-member-name">Bilal Jibaly</h3>
           <p className="team-member-position">Developer & Student at Rafik Hariri University</p>
           <p className="team-member-bio">Bilal Jibaly is a highly skilled developer with expertise in coding in general.</p>

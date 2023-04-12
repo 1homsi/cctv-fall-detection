@@ -103,7 +103,6 @@ export default function Landing({navigate}) {
                     </h4>
                 </div>
             </div>
-            <div className="blackline"></div>
             <div className="sec2InLanding"
             style={{
                 backgroundColor: "#636262",
@@ -140,7 +139,7 @@ export default function Landing({navigate}) {
                 {/* <EyeAnimation />
                 <Matrix /> */}
             </div>
-            <div className="blackline"></div>
+
             <div className="sec2InLanding" >
                 <div className="sec2InLanding-left" >
                 <Tilt
