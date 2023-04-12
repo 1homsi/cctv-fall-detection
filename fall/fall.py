@@ -89,7 +89,7 @@ class FallDetector:
         self.fps_time = 0
         self.f = 0
         
-    def Run(self):
+    def get_frame(self):
         while self.cam.grabbed():    # Loop until stop.
             self.f += 1
             frame = self.cam.getitem()   # Get frame from camera loader.
@@ -215,6 +215,5 @@ class FallDetector:
         self.cam.stop()  # Stop camera loader.
         if self.outvid:  # Release video writer.
             self.writer.release()    # Release video writer.
-        cv2.destroyAllWindows() # Close all windows.
         self.stop = True    # Stop thread.
         isOpened = False

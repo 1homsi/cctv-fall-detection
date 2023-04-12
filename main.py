@@ -49,8 +49,13 @@ def Close():
     
 @eel.expose
 def detectFallFeed():
-    if FallDetector().isOpened:
-        print("Fall Detector is opened")
+    if FallDetector.isOpened:
+        x = FallDetector() # create a FallDetector object
+        y = gen(x) # create a generator object
+        for each in y: # iterate through the generator object
+            blob = base64.b64encode(each) # encode the frame
+            blob = blob.decode("utf-8") # decode the frame
+            eel.updateImageSrc(blob)() # update the image source
     else:
         print("Fall Detector is not opened")
         
