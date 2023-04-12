@@ -10,6 +10,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import os
 import csv
 import datetime
+import sys
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' #to suppress some warnings
 
@@ -17,12 +18,17 @@ if not os.path.exists('emotion_data.csv'): # if file does not exist write header
     with open('emotion_data.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(["frame", "emotion", "pixels", "time stamp"])
-        
-        
-
+      
+      
+ 
 # Get the full path of the current Python file
-current_file = os.path.abspath(__file__)
+current_file = os.path.abspath(__file__)       
 
+# check if the training data is present
+if not os.path.join(os.path.dirname(current_file), 'data', 'train') or not os.path.join(os.path.dirname(current_file), 'data', 'test'):
+    print("Please download the training data")
+    sys.exit()
+        
 # Construct the path to the train directory
 train_directory = os.path.join(os.path.dirname(current_file), 'data', 'train')
 val_directory = os.path.join(os.path.dirname(current_file), 'data', 'test')
