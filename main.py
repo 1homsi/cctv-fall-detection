@@ -47,7 +47,13 @@ def Close():
     VideoCamera().close_camera() #close the camera
     print("Camera Closed")
     
-    
+@eel.expose
+def detectFallFeed():
+    if FallDetector().isOpened:
+        print("Fall Detector is opened")
+    else:
+        print("Fall Detector is not opened")
+        
 if __name__ == "__main__":
     # Start the server 
     try:

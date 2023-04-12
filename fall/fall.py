@@ -36,6 +36,7 @@ def kpt2bbox(kpt, ex=20):
                      kpt[:, 0].max() + ex, kpt[:, 1].max() + ex))   # (left, top, right, bottom)
 
 class FallDetector:
+    isOpened = False
     def __init__(self):
         self.stop = False
         self.cam_source = "0"  # 0: webcam, 1: usb cam, 2: ip cam, 3: rtsp cam.
@@ -214,3 +215,4 @@ class FallDetector:
             self.writer.release()    # Release video writer.
         cv2.destroyAllWindows() # Close all windows.
         self.stop = True    # Stop thread.
+        isOpened = False
