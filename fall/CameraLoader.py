@@ -29,7 +29,6 @@ class CamLoader:
         self.ori_frame = None
         self.read_lock = Lock()
         self.ori = ori_return
-
         self.preprocess_fn = preprocess
 
     def start(self):
