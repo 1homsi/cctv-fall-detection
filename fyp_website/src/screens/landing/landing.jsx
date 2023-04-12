@@ -112,7 +112,12 @@ export default function Landing({navigate}) {
                 </div>
             </div>
             <div className="blackline"></div>
-            <div className="sec2InLanding">
+            <div className="sec2InLanding"
+            style={{
+                backgroundColor: "#333",
+                color: "#fff"
+            }}
+            >
                 <div className="sec2InLanding-left" >
                 <h1>Fall Detection</h1>
                     <h4 style={{fontWeight: "400"}} >
