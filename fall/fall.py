@@ -1,4 +1,5 @@
 import os
+import sys
 import cv2
 import time
 import torch
@@ -7,15 +8,15 @@ import numpy as np
 import csv
 import datetime
 
-from Detection.Utils import ResizePadding
-from CameraLoader import CamLoader, CamLoader_Q
-from DetectorLoader import TinyYOLOv3_onecls
+from .Detection.Utils import ResizePadding
+from .CameraLoader import CamLoader, CamLoader_Q
+from .DetectorLoader import TinyYOLOv3_onecls
 
-from PoseEstimateLoader import SPPE_FastPose
-from fn import draw_single
+from .PoseEstimateLoader import SPPE_FastPose
+from .fn import draw_single
 
-from Track.Tracker import Detection, Tracker
-from ActionsEstLoader import TSSTG
+from .Track.Tracker import Detection, Tracker
+from .ActionsEstLoader import TSSTG
 
 def preproc(image, resize_fn):
     """

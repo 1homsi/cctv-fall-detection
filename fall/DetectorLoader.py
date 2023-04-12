@@ -1,14 +1,18 @@
 import time
 import torch
+import os
 import numpy as np
 import torchvision.transforms as transforms
 
 from queue import Queue
 from threading import Thread
 
-from Detection.Models import Darknet
-from Detection.Utils import non_max_suppression, ResizePadding
+from .Detection.Models import Darknet
+from .Detection.Utils import non_max_suppression, ResizePadding
 
+current_file = os.path.abspath(__file__)       
+yolo_config = os.path.join(os.path.dirname(current_file), 'Models', 'yolo-tiny-onecls', 'yolov3-tiny-onecls.cfg')
+weights_file = os.path.join(os.path.dirname(current_file), 'Models', 'yolo-tiny-onecls', 'best-model.pth')
 
 class TinyYOLOv3_onecls(object):
     """Load trained Tiny-YOLOv3 one class (person) detection model.
@@ -22,8 +26,8 @@ class TinyYOLOv3_onecls(object):
     """
     def __init__(self,
                  input_size=416,
-                 config_file='Models/yolo-tiny-onecls/yolov3-tiny-onecls.cfg',
-                 weight_file='Models/yolo-tiny-onecls/best-model.pth',
+                 config_file=yolo_config,
+                 weight_file=weights_file,
                  nms=0.2,
                  conf_thres=0.45,
                  device='cuda'):

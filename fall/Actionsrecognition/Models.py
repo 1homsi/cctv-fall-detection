@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 
-from Actionsrecognition.Utils import Graph
+from .Utils import Graph
 
 
 class GraphConvolution(nn.Module):

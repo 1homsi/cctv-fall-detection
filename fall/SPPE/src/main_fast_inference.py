@@ -1,12 +1,13 @@
 import torch
+import os
 import torch.nn as nn
 import torch.utils.data
 import torch.utils.data.distributed
 import torch.nn.functional as F
 import numpy as np
-from SPPE.src.utils.img import flip, shuffleLR
-from SPPE.src.utils.eval import getPrediction
-from SPPE.src.models.FastPose import FastPose
+from .utils.img import flip, shuffleLR
+from .utils.eval import getPrediction
+from .models.FastPose import FastPose
 
 import time
 import sys
@@ -21,10 +22,16 @@ except AttributeError:
         tensor._backward_hooks = backward_hooks
         return tensor
     torch._utils._rebuild_tensor_v2 = _rebuild_tensor_v2
-
+    
+current_file = os.path.abspath(__file__)
+parent_dir = os.path.dirname(current_file)
+grandparent_dir = os.path.dirname(parent_dir)
+ultraGrandparent_dir = os.path.dirname(grandparent_dir)
+weights_file320 = os.path.join(ultraGrandparent_dir, 'Models', 'sppe', 'fast_res101_320x256.pth')
+weights_file256 = os.path.join(ultraGrandparent_dir, 'Models', 'sppe', 'fast_res50_256x192.pth')
 
 class InferenNet(nn.Module):
-    def __init__(self, dataset, weights_file='./Models/sppe/fast_res101_320x256.pth'):
+    def __init__(self, dataset, weights_file=weights_file320):
         super().__init__()
 
         self.pyranet = FastPose('resnet101').cuda()
@@ -52,7 +59,7 @@ class InferenNet(nn.Module):
 
 
 class InferenNet_fast(nn.Module):
-    def __init__(self, weights_file='./Models/sppe/fast_res101_320x256.pth'):
+    def __init__(self, weights_file=weights_file320):
         super().__init__()
 
         self.pyranet = FastPose('resnet101').cuda()
@@ -68,7 +75,7 @@ class InferenNet_fast(nn.Module):
 
 
 class InferenNet_fastRes50(nn.Module):
-    def __init__(self, weights_file='./Models/sppe/fast_res50_256x192.pth'):
+    def __init__(self, weights_file=weights_file256):
         super().__init__()
 
         self.pyranet = FastPose('resnet50', 17).cuda()

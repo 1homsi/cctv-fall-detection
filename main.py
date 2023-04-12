@@ -3,11 +3,13 @@ from tkinter import Tk, messagebox
 import eel
 import base64
 
-import sys 
-sys.path.append("..")
+import os
+import sys
+sys.path.append(os.path.abspath(''))
+
 
 from emotion.emotion import *
-# from fall.fall import *
+from fall.fall import *
 
 def show_error(title, msg):
     root = Tk() # create a tkinter window

@@ -2,8 +2,11 @@ import os
 import torch
 import numpy as np
 
-from Actionsrecognition.Models import TwoStreamSpatialTemporalGraph
-from pose_utils import normalize_points_with_size, scale_pose
+from .Actionsrecognition.Models import TwoStreamSpatialTemporalGraph
+from .pose_utils import normalize_points_with_size, scale_pose
+
+current_file = os.path.abspath(__file__)       
+weight_file_tsstg = os.path.join(os.path.dirname(current_file), 'Models', 'TSSTG', 'tsstg-model.pth')
 
 
 class TSSTG(object):
@@ -13,7 +16,7 @@ class TSSTG(object):
         device: (str) Device to load the model on 'cpu' or 'cuda'.
     """
     def __init__(self,
-                 weight_file='./Models/TSSTG/tsstg-model.pth',
+                 weight_file=weight_file_tsstg,
                  device='cuda'):
         self.graph_args = {'strategy': 'spatial'}
         self.class_names = ['Standing', 'Walking', 'Sitting', 'Lying Down',
