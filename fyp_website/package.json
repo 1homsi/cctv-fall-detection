@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@motionone/utils": "^10.15.1",
     "@mui/material": "^5.11.16",
+    "@reach/rect": "^0.18.0",
     "@react-three/drei": "^9.62.2",
     "@react-three/fiber": "^8.12.0",
     "@testing-library/jest-dom": "^5.16.5",

@@ -3,6 +3,7 @@ import React from "react";
 import "./landing.css"
 import * as THREE from 'three';
 import EyeAnimation from "../../components/eye"
+// import Matrix from "../../components/timeline/matrix";
 
 // stuff 
 import { Suspense, useState, useEffect, useRef } from "react";
@@ -137,8 +138,10 @@ export default function Landing({navigate}) {
                 </Tilt>
                 </div>
             </div>
+
             <div>
-                <EyeAnimation />
+                {/* <EyeAnimation />
+                <Matrix /> */}
             </div>
             <div className="blackline"></div>
             <div className="sec2InLanding" >

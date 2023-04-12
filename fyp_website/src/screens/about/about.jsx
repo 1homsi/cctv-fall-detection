@@ -1,10 +1,13 @@
 import React from 'react';
 import Anime from 'animejs/lib/anime.es.js';
 import './about.css';
+import Matrix from "../../components/timeline/matrix";
 
 //team images
 import teamMember1 from '../../assets/jalal.jpeg';
 import teamMember2 from '../../assets/fawzy.jpeg';
+
+
 
 
 const About = () => {
@@ -36,6 +39,7 @@ const About = () => {
 
   return (
     <div className="about-page">
+      <Matrix />
       <h1 className="page-title">WatchGuard AI</h1>
       <p className="who-we-are">We are WatchGuard AI, a leading provider of AI-powered CCTV cameras that help businesses and organizations detect and analyze human emotions in real-time. By using our cutting-edge technology, you can monitor customer satisfaction, reduce wait times, and improve overall customer experience.</p>
       <p className="mission">Our mission is to help businesses and organizations create safe and secure environments for their customers and employees. We believe that by using AI technology to analyze human behavior, we can prevent accidents and reduce crime, making public spaces safer for everyone.</p>
