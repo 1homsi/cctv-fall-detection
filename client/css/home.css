@@ -1,0 +1,100 @@
+/* Side button code */
+.body {
+  background-image: url("../images/servers.jpg") no-repeat fixed center;
+}
+.sidebutton {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebutton .wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sidebutton .link_wrapper {
+  position: relative;
+}
+
+.sidebutton a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all 0.35s;
+}
+
+.sidebutton .icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.sidebutton .icon svg {
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: green;
+  transition: all 0.35s;
+}
+
+.sidebutton a:hover {
+  width: 180px;
+  border: 3px solid green;
+  background: transparent;
+  color: green;
+}
+
+.sidebutton a:hover + .icon {
+  border: 3px solid #2ecc71;
+  right: -25%;
+}
+
+/* button {
+      border-radius: 6px;
+      background-color: #000;
+      border-color: #000;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bolder;
+  } */
+
+/* button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #000;
+  } */
+
+/* #image-container {
+    display: block;
+    text-align: center;
+  }
+  
+  #info {
+    visibility: hidden;
+  }
+  
+  #main {
+    text-align: center;
+  } */

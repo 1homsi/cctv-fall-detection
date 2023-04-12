@@ -1,0 +1,8 @@
+#bottom {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

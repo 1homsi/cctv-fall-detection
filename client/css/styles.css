@@ -1,13 +1,35 @@
 #bottom {
-    position: fixed;
-    bottom: 0;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    width:100%;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-button {
+.icons .home {
+  margin-right: 0pt;
+  padding: 2pt;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: lavender;
+  cursor: pointer;
+}
+.icons .settings {
+  margin-right: 0pt;
+  padding: 2pt;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: lavender;
+  cursor: pointer;
+}
+.title h1 {
+  text-align: center;
+}
+
+/* button {
     border-radius: 6px;
     background-color: #000;
     border-color: #000;
@@ -18,23 +40,23 @@ button {
     display: inline-block;
     font-size: 16px;
     font-weight: bolder;
-}
+} */
 
-button:hover {
-    background-color: white;
-    color: black;
-    border: 2px solid #000;
-}
+/* button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #000;
+} */
 
-#image-container {
-    display: block;
-   text-align: center;
+/* #image-container {
+  display: block;
+  text-align: center;
 }
 
 #info {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #main {
-    text-align: center;
-}
+  text-align: center;
+} */
