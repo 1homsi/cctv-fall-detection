@@ -34,7 +34,7 @@ export default function Products() {
             Fall Detection
           </h1>
           <div className="blackline"></div>
-          <p>An AI can detect and analyze customer emotions, helping businesses to measure satisfaction and improve customer service using facial expressions, tone of voice, and body language.</p>
+          <p>Imagine having an AI that watches over you, with every step you take, every move you make. This AI is always on guard, scanning your movements for signs of imbalance or instability. It's your guardian angel, ready to leap into action at a moment's notice if you start to fall. With advanced sensors and algorithms, this AI can deploy safety features, call for emergency assistance, and even analyze your movements to identify areas where you may be at risk of falling. It's like having a superhero by your side, always watching over you and protecting you from harm.</p>
           <div className="blackline"></div>
           <h3>{monthly ? "100$ / month" : "1150$ / year"}</h3>
           <button>
@@ -165,7 +165,7 @@ export default function Products() {
               <div className="product-right" >
                 <h3>Fall Detection</h3>
                 <div className="blackline">{".     "}</div>
-                <p>Imagine having an AI that watches over you, with every step you take, every move you make. This AI is always on guard, scanning your movements for signs of imbalance or instability. It's your guardian angel, ready to leap into action at a moment's notice if you start to fall. With advanced sensors and algorithms, this AI can deploy safety features, call for emergency assistance, and even analyze your movements to identify areas where you may be at risk of falling. It's like having a superhero by your side, always watching over you and protecting you from harm.</p>
+                <p>Imagine a device that uses CCTVs to monitor your movements and acts as a guardian, ready to assist if you start to fall. It can deploy safety measures and call for help in case of emergency, making it like having a superhero protecting you.</p>
                 <div className="buy">
                   <h3>{monthly ? "100$ / month" : "1150$ / year"}</h3>
                   <button>
@@ -181,7 +181,7 @@ export default function Products() {
               <div className="product-right">
                   <h3>Emotion Detection</h3>
                   <div className="blackline">{".     "}</div>
-                  <p>Imagine having an AI that can read people's emotions with remarkable accuracy, like a mind-reading machine. This AI is designed to detect and analyze the emotional state of customers, allowing businesses to measure their satisfaction levels and respond proactively to their needs. With its advanced algorithms and machine learning capabilities, this emotion detection AI can pick up on subtle cues like facial expressions, tone of voice, and body language, providing real-time feedback to help businesses improve their customer service. It's like having a secret weapon for customer satisfaction, giving businesses the power to connect with their customers on a deeper level and build long-lasting relationships.</p>
+                  <p>Imagine a tool that can read people's emotions accurately, like a mind-reading machine. This tool is designed to detect and analyze the emotional state of customers, allowing businesses to measure their satisfaction levels and respond proactively to their needs.</p>
                   <div className="buy">
                     <h3>{monthly ? "150$ / month" : "1700$ / year"}</h3>
                     <button>

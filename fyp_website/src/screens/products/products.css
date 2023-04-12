@@ -3,7 +3,7 @@
 .mainProduct {
   position: relative;
   width: 100vw;
-  height: 150vh;
+  height: 210vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,13 +125,13 @@
   background-color: rgb(255, 255, 255);
   color: black;
   width: 80%;
-  height: 50vh;
+  height: 100vh;
   border-radius: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 30px;
   padding: 10px;
-  min-height: 30%;
+  min-height: 80vh;
 }
 
 .product-right {

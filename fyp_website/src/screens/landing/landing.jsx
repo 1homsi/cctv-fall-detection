@@ -69,7 +69,7 @@ export default function Landing({navigate}) {
                     />
                     <TypeAnimation
                         sequence={[
-                        'WatchGuard AI is an intelligent and reliable AI system that constantly monitors your surroundings to ensure your safety and protection. ',
+                        'Sentinel watchgaurd is an intelligent and reliable system that constantly monitors your surroundings to ensure your safety and protection. ',
                         1000,
                         
                         ]}
@@ -107,7 +107,7 @@ export default function Landing({navigate}) {
                 <div className="sec2InLanding-right" >
                     <h1>Emotion Detection</h1>
                     <h4 style={{fontWeight: "400"}} >
-                    WatchGuard AI emotion detection is an advanced artificial intelligence system that uses cutting-edge technology to accurately detect and interpret human emotions. With its powerful algorithms and advanced machine learning capabilities, WatchGuard AI is capable of identifying a wide range of emotions, including joy, sadness, anger, fear, and more. Whether you are looking to improve your customer service, enhance your marketing campaigns, or simply gain a better understanding of your audience, WatchGuard AI can provide you with the insights you need to succeed. So why wait? Try WatchGuard AI emotion detection today and start unlocking the power of emotional intelligence!
+                    Sentinel watchgaurd's emotion detection is an advanced artificial intelligence system that uses cutting-edge technology to accurately detect and interpret human emotions. With its powerful algorithms and advanced machine learning capabilities, Sentinel watchgaurd is capable of identifying a wide range of emotions, including joy, sadness, anger, fear, and more. Whether you are looking to improve your customer service, enhance your marketing campaigns, or simply gain a better understanding of your audience, Sentinel watchgaurd can provide you with the insights you need to succeed. So why wait? Try Sentinel watchgaurd's emotion detection today and start unlocking the power of emotional intelligence!
                     </h4>
                 </div>
             </div>
@@ -116,7 +116,7 @@ export default function Landing({navigate}) {
                 <div className="sec2InLanding-left" >
                 <h1>Fall Detection</h1>
                     <h4 style={{fontWeight: "400"}} >
-                    WatchGuard AI Fall Detection is an advanced artificial intelligence system that is designed to detect and alert caregivers and staff to falls that have already occurred. Using sophisticated algorithms and machine learning techniques, it can analyze movements and behaviors in real-time and alert the appropriate personnel if a fall is detected. While it does not prevent falls from happening, WatchGuard AI Fall Detection can provide a critical response in the event of a fall, allowing for timely assistance and potentially minimizing the severity of injuries. Whether you're a caregiver or a staff member in a public space, WatchGuard AI Fall Detection can provide an added layer of safety and security for those who may be at risk of falling.
+                    Sentinel watchgaurd's Fall Detection is an advanced artificial intelligence system that is designed to detect and alert caregivers and staff to falls that have already occurred. Using sophisticated algorithms and machine learning techniques, it can analyze movements and behaviors in real-time and alert the appropriate personnel if a fall is detected. While it does not prevent falls from happening, Sentinel watchgaurd's Fall Detection can provide a critical response in the event of a fall, allowing for timely assistance and potentially minimizing the severity of injuries. Whether you're a caregiver or a staff member in a public space, Sentinel watchgaurd's Fall Detection can provide an added layer of safety and security for those who may be at risk of falling.
                     </h4>
                     
                 </div>
@@ -163,9 +163,9 @@ export default function Landing({navigate}) {
                     </Tilt>
                 </div>
                 <div className="sec2InLanding-right" >
-                    <h1>Why WatchGuard AI?</h1>
+                    <h1>Why Sentinel watchgaurd?</h1>
                     <h4 style={{fontWeight: "400"}} >
-                    WatchGuard AI is the ideal solution for public areas such as malls and schools, where safety and security are of the utmost importance. Our advanced technology and sophisticated algorithms are designed to quickly and accurately detect falls and other incidents, allowing you to respond quickly and effectively in the event of an emergency. With WatchGuard AI, you can monitor public spaces with confidence, knowing that you have the tools you need to keep people safe and secure. Plus, our emotion detection technology can help you better understand the needs and preferences of your customers or students, allowing you to provide the best possible service and support. So whether you're looking to improve safety and security, enhance customer or student experience, or simply gain a better understanding of your audience, WatchGuard AI is the smart choice for public areas.
+                    Sentinel watchgaurd is the ideal solution for public areas such as malls and schools, where safety and security are of the utmost importance. Our advanced technology and sophisticated algorithms are designed to quickly and accurately detect falls and other incidents, allowing you to respond quickly and effectively in the event of an emergency. With Sentinel watchgaurd, you can monitor public spaces with confidence, knowing that you have the tools you need to keep people safe and secure. Plus, our emotion detection technology can help you better understand the needs and preferences of your customers or students, allowing you to provide the best possible service and support. So whether you're looking to improve safety and security, enhance customer or student experience, or simply gain a better understanding of your audience, Sentinel watchgaurd is the smart choice for public areas.
                     </h4>
                 </div>
             </div>

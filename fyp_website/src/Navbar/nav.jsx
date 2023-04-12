@@ -10,7 +10,7 @@ function Nav({navigate}) {
                 style={{
                     cursor: 'pointer'
                 }}
-            >WatchGuard AI</h1>
+            >Sentinel watchgaurd</h1>
         </div>
         <div className='navLinks'>
             <ul>
