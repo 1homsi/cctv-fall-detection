@@ -24,7 +24,7 @@ This project is about fall detection and emotion detection. The project is based
 
 ### Prerequisites
 
-- Python 3.6 or higher
+- Python 3.9
 - Tensorflow 1.14 (GPU version)
 - Keras 2.2.4 (GPU version)
 - OpenCV 4.1.0

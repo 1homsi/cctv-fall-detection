@@ -203,7 +203,9 @@ class FallDetector:
             if self.outvid:  # Write video.
                 self.writer.write(frame) # Write frame to video.
 
-            cv2.imshow('frame', frame)  # Show frame.
+            ret, jpeg = cv2.imencode('.jpg', frame)  # Encode frame to jpg.
+            if isOpened:
+                return jpeg.tobytes()   # Return frame.
 
             if self.stop:
                 self.close()
