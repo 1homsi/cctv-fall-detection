@@ -18,24 +18,22 @@ def show_error(title, msg):
     root.destroy() # destroy the tkinter window
 
 def gen(camera):
-    while True:
-        frame = camera.get_frame() # get frame from camera
-        """ Yield is a keyword in Python that is used to return 
-        from a function without destroying the states of 
-        its local variable """
-        yield frame # yield the frame
+    while camera.isOpened:
+        frame = camera.get_frame()
+        if frame is not None:
+            yield frame
+        else:
+            break
 
 @eel.expose
 def video_feed():
-    if VideoCamera.isOpened: 
-        x = VideoCamera() # create a VideoCamera object
-        y = gen(x) # create a generator object
-        for each in y: # iterate through the generator object
-            blob = base64.b64encode(each) # encode the frame
-            blob = blob.decode("utf-8") # decode the frame
-            eel.updateImageSrc(blob)() # update the image source
-    else:
-        print("Camera is not opened")
+    x = VideoCamera()
+    y = gen(x)
+    for each in y:
+        blob = base64.b64encode(each)
+        blob = blob.decode("utf-8")
+        eel.updateImageSrc(blob)()
+    x.close_camera()
 
 @eel.expose
 def train(iterations):
@@ -45,7 +43,6 @@ def train(iterations):
 @eel.expose
 def Close():
     VideoCamera().close_camera() #close the camera
-    print("Camera Closed")
     
 @eel.expose
 def detectFallFeed():

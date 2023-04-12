@@ -1,6 +1,6 @@
 import numpy as np  
 import matplotlib.pyplot as plt
-import cv2 as cv
+import cv2
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Flatten
 from tensorflow.keras.layers import Conv2D
@@ -89,39 +89,44 @@ def Train_Model(num_epoch):
 class VideoCamera(object):
     isOpened = True  
     def __init__(self):
-        self.video = cv.VideoCapture(0, cv.CAP_DSHOW) # 0 -> index of camera
+        self.video = cv2.VideoCapture(0, cv2.CAP_DSHOW) # 0 -> index of camera
     def __del__(self):
         self.video.release() # release the camera
     def get_frame(self):
         isOpened = True # check if camera is open
         model_file = os.path.join(os.path.dirname(current_file), 'modules', 'model.h5') # load the model file
         model.load_weights(model_file) # load the weights
-        cv.ocl.setUseOpenCL(False) # to avoid error
+        cv2.ocl.setUseOpenCL(False) # to avoid error
         emotion_dict = {0: "Angry", 1: "Disgusted", 
-                        2: "Fearful", 3: "Happy",
-                        4: "Neutral", 5: "Sad",
-                        6: "Surprised"} # dictionary of emotions
+                2: "Fearful", 3: "Happy",
+                4: "Neutral", 5: "Sad",
+                6: "Surprised"} # dictionary of emotions
         ret, frame = self.video.read() # read the camera
         if not ret: # if not return the frame
-            print("Unable to capture video")
+            print("Video Capture error or Video feed ended")
+            return None
         facecasc_file = os.path.join(os.path.dirname(current_file), 'modules', 'haarcascade_frontalface_default.xml') # load the cascade file
-        facecasc = cv.CascadeClassifier(facecasc_file) # load the cascade
-        gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY) # convert to grayscale
-        faces = facecasc.detectMultiScale(gray,scaleFactor=1.3, minNeighbors=5) # detect the faces and store the positions 
-        for (x, y, w, h) in faces: # frame, x, y, w, h
-            cv.rectangle(frame, (x, y-50), (x+w, y+h+10), (255, 255, 0), 2) # draw rectangle to main frame 
-            roi_gray = gray[y:y + h, x:x + w] # crop the region of interest i.e. face from the frame
-            cropped_img = np.expand_dims(np.expand_dims(cv.resize(roi_gray, (48, 48)), -1), 0) # resize the image
-            prediction = model.predict(cropped_img) # predict the emotion
-            maxindex = int(np.argmax(prediction)) # get the index of the largest value
-            cv.putText(frame, emotion_dict[maxindex], (x+20, y-60), 
-                       cv.FONT_HERSHEY_SIMPLEX, 1, (255, 2.55, 255), 2, cv.LINE_AA) # write the emotion text above rectangle
-            with open('emotion_data.csv', 'a', newline='') as file:
-                writer = csv.writer(file)
-                writer.writerow([frame, emotion_dict[maxindex], roi_gray, datetime.datetime.now()])
-        ret, jpeg = cv.imencode('.jpg', frame) # encode the frame into jpeg
-        if isOpened:
-            return jpeg.tobytes() #byte array 64
+        facecasc = cv2.CascadeClassifier(facecasc_file) # load the cascade
+        if frame is not None and len(frame) > 0:
+            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) # convert to grayscale
+            faces = facecasc.detectMultiScale(gray,scaleFactor=1.3, minNeighbors=5) # detect the faces and store the positions 
+            for (x, y, w, h) in faces: # frame, x, y, w, h
+                cv2.rectangle(frame, (x, y-50), (x+w, y+h+10), (255, 255, 0), 2) # draw rectangle to main frame 
+                roi_gray = gray[y:y + h, x:x + w] # crop the region of interest i.e. face from the frame
+                cropped_img = np.expand_dims(np.expand_dims(cv2.resize(roi_gray, (48, 48)), -1), 0) # resize the image
+                prediction = model.predict(cropped_img) # predict the emotion
+                maxindex = int(np.argmax(prediction)) # get the index of the largest value
+                cv2.putText(frame, emotion_dict[maxindex], (x+20, y-60), 
+                   cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 2.55, 255), 2, cv2.LINE_AA) # write the emotion text above rectangle
+                with open('emotion_data.csv', 'a', newline='') as file:
+                    writer = csv.writer(file)
+                    writer.writerow([frame, emotion_dict[maxindex], roi_gray, datetime.datetime.now()])
+            ret, jpeg = cv2.imencode('.jpg', frame) # encode the frame into jpeg
+            if isOpened:
+                return jpeg.tobytes() #byte array 64
+        else:
+            return None # return None if frame is empty
+
     def close_camera(self):
         isOpened = False
         self.video.release() # release the camera
