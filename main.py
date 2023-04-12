@@ -7,6 +7,7 @@ import sys
 sys.path.append("..")
 
 from emotion.emotion import *
+# from fall.fall import *
 
 def show_error(title, msg):
     root = Tk() # create a tkinter window
@@ -49,7 +50,7 @@ if __name__ == "__main__":
     # Start the server 
     try:
         eel.init('client') # path to project folder 
-        eel.start('index.html') # start the web app with the main file index.html
+        eel.start('index.html') # start the web app with the main file index.html                
     except Exception as e: 
         err_msg = 'Could not launch a local server' # error message
         logging.error('{}\n{}'.format(err_msg, e.args))

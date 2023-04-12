@@ -213,7 +213,5 @@ class FallDetector:
             self.writer.release()    # Release video writer.
         cv2.destroyAllWindows() # Close all windows.
 
-
-
 x = FallDetector()
 x.Run()
