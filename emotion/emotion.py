@@ -68,8 +68,9 @@ model.add(Dense(7, activation='softmax'))
 
 # If you want to train the same model or try other models, go for this
 def Train_Model(num_epoch):
+    optimizer = Adam(learning_rate=0.0001)
     model.compile(loss='categorical_crossentropy',
-                  optimizer=Adam(learning_rate=0.0001, decay=1e-6),
+                  optimizer=optimizer,
                   metrics=['accuracy'])
     model_info = model.fit(
             train_generator,
@@ -120,4 +121,3 @@ class VideoCamera(object):
     def close_camera(self):
         isOpened = False
         self.video.release() # release the camera
-        
