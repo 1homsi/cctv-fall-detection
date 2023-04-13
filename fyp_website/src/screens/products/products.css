@@ -259,6 +259,7 @@
   height: auto;
   width: 100vw;
   overflow: hidden;
+  margin-top: 60px;
 }
 
 .productsInner {
