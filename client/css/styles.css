@@ -1,10 +1,82 @@
+body {
+  background-image: url("../images/servers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 auto;
+  height: 100vh;
+  overflow: hidden;
+}
+#image-container {
+  z-index: -1;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin-left: 20px;
+  width: 550px;
+  height: 400px;
+}
+
+.detectbtn inside {
+  width: 150px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: dimgray;
+  color: aliceblue;
+  border: 1px solid black;
+  outline: none;
+  transition: 1s ease-in-out;
+  font-family: "Lato", sans-serif;
+}
+.detectbtn inside {
+  width: 150px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: dimgray;
+  color: aliceblue;
+  border: 1px solid black;
+  outline: none;
+  transition: 1s ease-in-out;
+  font-family: "Lato", sans-serif;
+}
+.detectbtn right {
+  margin-left: 4px;
+}
+
+/* .detectbtn:hover {
+  transition: 1s ease-in-out;
+  background: #4f95da;
+} */
+
+/* .detectbtn:hover svg {
+  stroke-dashoffset: -480;
+} */
+
+.detectbtn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
 #bottom {
   position: fixed;
-  bottom: 0;
-  margin-bottom: 20px;
+  bottom: 0%;
+  /* margin-bottom: 20px; */
   display: flex;
   justify-content: center;
   width: 100%;
+}
+#bottom .detectbtn {
+  width: 150px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: dimgray;
+  color: aliceblue;
+  border: 1px solid black;
+  outline: none;
+  transition: 1s ease-in-out;
+  font-family: "Lato", sans-serif;
 }
 
 .icons .home {
