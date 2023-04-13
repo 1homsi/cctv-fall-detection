@@ -167,3 +167,4 @@ cython_debug/
 
 emotion_data.csv
 extra_data.csv
+*.mp4v
