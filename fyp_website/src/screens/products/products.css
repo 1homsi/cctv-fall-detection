@@ -310,7 +310,7 @@
   overflow: hidden;
   color: black;
   width: 20vw;
-  height: 30vh;
+  height: 40vh;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 10px 10px 34px -12px rgba(0,0,0,0.75);
@@ -355,4 +355,15 @@
   font-size: 1em;
   font-weight: normal;
   cursor: pointer;
+}
+
+.itemCards img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#face {
+  width: 200px;
 }
