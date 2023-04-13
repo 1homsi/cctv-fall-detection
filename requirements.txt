@@ -24,3 +24,4 @@ torch
 torchvision
 urllib3
 tensorflow
+eel
