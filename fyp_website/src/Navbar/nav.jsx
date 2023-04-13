@@ -14,6 +14,12 @@ function Nav({navigate}) {
         </div>
         <div className='navLinks'>
             <ul>
+            <li
+                    onClick={() => navigate('/')}
+                    style={{
+                      cursor: 'pointer',
+                    }}
+                >Home</li>
                 <li
                     onClick={() => navigate('/products')}
                     style={{

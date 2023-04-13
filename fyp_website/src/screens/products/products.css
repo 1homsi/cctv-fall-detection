@@ -255,22 +255,50 @@
   }
 } */
 
+.buttonsProd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  z-index: 1;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.buttonsProd button {
+  background-color: rgb(47, 45, 45);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 9px;
+  margin: 10px;
+  font-size: 1em;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.buttonsProd button:hover {
+  background-color: white;
+  color: rgb(47, 45, 45);
+  border: rgb(47, 45, 45) solid 1.5px;
+  transition: 0.6s ease-in-out;
+}
+
+
 .mainProductsCont {
-  height: auto;
-  width: 100vw;
   overflow: hidden;
   margin-top: 60px;
 }
 
 .productsInner {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   overflow: hidden;
   color: black;
-  width: 100%;
-  height: auto;
+  width: 90%;
   border-radius: 10px;
   opacity: 0.8;
 }
@@ -282,30 +310,45 @@
   flex-direction: column;
   overflow: hidden;
   color: black;
-  width: 30vw;
-  height: 60vh;
-  border-radius: 10px;
+  width: 20vw;
+  height: 30vh;
+  border-radius: 20px;
   padding: 20px;
   box-shadow: -10px 17px 53px -21px rgba(0,0,0,0.75);
+  margin: 30px;
 }
 
 .itemCards h1 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 0.5rem;
   font-size: 1.5em;
   color: rgb(57, 57, 57);
   margin-top: 5%;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-.itemCards p {
+.itemCards h3 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   margin-bottom: 0.5rem;
-  font-size: 0.8em;
-  color: rgb(57, 57, 57);
-  text-align: left;
-  width: 70%;
+  font-size: 1.2em;
+  color: rgb(2, 2, 2);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.itemCards button {
+  background-color: rgb(23, 22, 22);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 9px;
+  margin: 10px;
+  font-size: 1em;
+  font-weight: normal;
+  cursor: pointer;
 }
