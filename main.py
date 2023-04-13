@@ -49,9 +49,9 @@ def Close():
     VideoCamera().close_camera() #close the camera
     
 @eel.expose
-def detectFallFeed():
+def detectFallFeed(source):
     if FallDetector.isOpened:
-        x = FallDetector() # create a FallDetector object
+        x = FallDetector(source) # create a FallDetector object
         y = gen(x) # create a generator object
         for each in y: # iterate through the generator object
             blob = base64.b64encode(each) # encode the frame

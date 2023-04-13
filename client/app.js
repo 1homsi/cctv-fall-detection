@@ -5,7 +5,7 @@ const py_video = () => {
 };
 
 const py_video_fall = () => {
-    eel.detectFallFeed()();
+    eel.detectFallFeed("0")();
 };
 
 const closeConnection = () => {

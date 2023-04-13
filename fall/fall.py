@@ -37,9 +37,9 @@ def kpt2bbox(kpt, ex=20):
 
 class FallDetector:
     isOpened = True
-    def __init__(self):
+    def __init__(self, source):
         self.stop = False
-        self.cam_source = "0"  # 0: webcam, 1: usb cam, 2: ip cam, 3: rtsp cam.
+        self.cam_source = source  # 0: webcam, 1: usb cam, 2: ip cam, 3: rtsp cam.
         self.detection_input_size = 384  # 320, 416, 512, 608.
         self.pose_input_size = "224x160"  # 256x192, 384x288, 512x384, 640x480, 736x736, 800x608.
         self.pose_backbone = "resnet50" # resnet50, resnet101, resnet152.
