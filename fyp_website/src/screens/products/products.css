@@ -108,7 +108,7 @@
   flex-direction: row;
   overflow: hidden;
   color: black;
-  width: 60%;
+  width: 50%;
   height: auto;
   border-radius: 10px;
   padding: 20px;
@@ -116,13 +116,13 @@
 
 .prodOuter {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
   background-color: rgb(249, 252, 255);
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   border-radius: 10px;
   margin: 20px;
   margin-top: 0;
@@ -132,7 +132,7 @@
 
 .prodOuter img {
   width: 100%;
-  height: 50vh;
+  height: 50%;
 }
 
 .prodOuter p {
@@ -147,7 +147,7 @@
   font-weight: 500;
   font-size: 1.2em;
   color: rgb(57, 57, 57);
-  margin: 10px;
+  margin: 5px;
 }
 
 .prodOuter button {
