@@ -122,7 +122,7 @@
   overflow: hidden;
   background-color: rgb(249, 252, 255);
   width: 100%;
-  height: auto;
+  height: 80vh;
   border-radius: 10px;
   margin: 20px;
   margin-top: 0;
@@ -139,7 +139,7 @@
   font-weight: normal;
   font-size: 0.9em;
   text-align: left;
-  padding: 10px;
+  padding-inline: 20px;
   color: rgb(57, 57, 57);
 }
 
@@ -147,6 +147,7 @@
   font-weight: 500;
   font-size: 1.2em;
   color: rgb(57, 57, 57);
+  margin: 10px;
 }
 
 .prodOuter button {
@@ -155,7 +156,7 @@
   border: none;
   border-radius: 10px;
   padding: 10px;
-  margin: 20px;
+  margin: 13px;
   width: fit-content;
   font-weight: 500;
   font-size: 1em;
