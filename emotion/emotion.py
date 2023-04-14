@@ -106,7 +106,7 @@ class VideoCamera(object):
             print("Video Capture error or Video feed ended")
             return None
         facecasc_file = os.path.join(os.path.dirname(current_file), 'modules', 'haarcascade_frontalface_default.xml') # load the cascade file
-        facecasc = cv2.CascadeClassifier(facecasc_file) # load the cascade
+        facecasc = cv2.CascadeClassifier(facecasc_file) # load the cascade which is used to detect the face
         if frame is not None and len(frame) > 0:
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) # convert to grayscale
             faces = facecasc.detectMultiScale(gray,scaleFactor=1.3, minNeighbors=5) # detect the faces and store the positions 
