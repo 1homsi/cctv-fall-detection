@@ -1,94 +1,123 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <head>
-    <title>Home</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <link rel="icon" href="images/shield.png" type="image/x-icon">
-    <!-- js files -->
-    <script src="js/custom.js"></script>
-    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-    <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
-  </head>
-  <body>
-    <div class="preloader">
-      <div class="preloader-body">
-        <div class="cssload-container"><span></span><span></span><span></span><span></span>
-        </div>
+
+<head>
+  <title>Sentinal Watchguard</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/shield.png" type="image/x-icon">
+  <!-- js files -->
+  <script src="js/custom.js"></script>
+  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+  <!-- Stylesheets-->
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container"><span></span><span></span><span></span><span></span>
       </div>
     </div>
-    <div class="page">
-      <div id="home">
-        <!-- Page Header-->
-        <header class="section page-header">
-          <!-- RD Navbar-->
-          <div class="rd-navbar-wrap">
-            <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-              <div class="rd-navbar-main-outer">
-                <div class="rd-navbar-main">
-                  <!-- RD Navbar Panel-->
-                  <div class="rd-navbar-panel">
-                    <!-- RD Navbar Toggle-->
-                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                    <!-- RD Navbar Brand-->
-                    <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/logo2-cropped.png" alt="" width="230" height="50"/></a></div>
-                  </div>
-                  <div class="rd-navbar-main-element">
-                    <div class="rd-navbar-nav-wrap">
-                      <!-- RD Navbar Share-->
-                      <div class="rd-navbar-share fl-bigmug-line-share27" data-rd-navbar-toggle=".rd-navbar-share-list">
-                        <ul class="list-inline rd-navbar-share-list">
-                          <li class="rd-navbar-share-list-item"><a class="icon fa fa-facebook" href="#"></a></li>
-                          <li class="rd-navbar-share-list-item"><a class="icon fa fa-twitter" href="#"></a></li>
-                          <li class="rd-navbar-share-list-item"><a class="icon fa fa-google-plus" href="#"></a></li>
-                          <li class="rd-navbar-share-list-item"><a class="icon fa fa-instagram" href="#"></a></li>
-                        </ul>
-                      </div>
-                      <ul class="rd-navbar-nav">
-                        <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a></li>
-                        <li class="rd-nav-item"><a class="rd-nav-link" href="#services">Services</a></li>
-                        <li class="rd-nav-item"><a class="rd-nav-link" href="#projects">Projects</a></li>
-                        <li class="rd-nav-item"><a class="rd-nav-link" href="#team">Team</a></li>
-                        <li class="rd-nav-item"><a class="rd-nav-link" href="#news">News</a></li>
-                        <li class="rd-nav-item"><a class="rd-nav-link" href="#contacts">Contacts</a></li>
+  </div>
+  <div class="page">
+    <div id="home">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
+            data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+            data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/logo2-cropped.png"
+                        alt="" width="230" height="50" /></a></div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <!-- RD Navbar Share-->
+                    <div class="rd-navbar-share fl-bigmug-line-share27" data-rd-navbar-toggle=".rd-navbar-share-list">
+                      <ul class="list-inline rd-navbar-share-list">
+                        <li class="rd-navbar-share-list-item"><a class="icon fa fa-facebook" href="#"></a></li>
+                        <li class="rd-navbar-share-list-item"><a class="icon fa fa-twitter" href="#"></a></li>
+                        <li class="rd-navbar-share-list-item"><a class="icon fa fa-google-plus" href="#"></a></li>
+                        <li class="rd-navbar-share-list-item"><a class="icon fa fa-instagram" href="#"></a></li>
                       </ul>
                     </div>
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#services">Services</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#projects">Projects</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#team">Team</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#news">News</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#contacts">Contacts</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
-            </nav>
-          </div>
-        </header>
-        <!-- landing section -->
-        <div className="ContainerLanding">
-          <div class="BannerLanding">
-            <video class="video" src="resources/vidbanner.mp4" autoplay loop muted></video>
-            
-            <h3 class="always">Always
-              <span id="animation" class="typer" id="main" data-words="Watching,Protecting" data-delay="100" data-deleteDelay="1500"></span>
-              <span class="cursor" data-owner="main"></span>
-            </h3>
-            
-            <div class="landing-text">
-                <h1 id="animation"></h1>
-                <h4>Sentinel watchgaurd is an intelligent and reliable system that constantly monitors your surroundings to ensure your safety and protection.</h4>
-                <div class="startBTN">
-                    <button id="startBTN" onmouseenter="hover()" onmouseleave="unhover()" onmousedown="press()" onmouseup="release()">Start</button>
-                </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- landing section -->
+      <div className="ContainerLanding">
+        <div class="BannerLanding">
+          <video class="video" src="resources/vidbanner.mp4" autoplay loop muted></video>
+
+          <h3 class="always">Always
+            <span id="animation" class="typer" id="main" data-words="Watching,Protecting" data-delay="100"
+              data-deleteDelay="1500"></span>
+            <span class="cursor" data-owner="main"></span>
+          </h3>
+
+          <div class="landing-text">
+            <h1 id="animation"></h1>
+            <h4>Sentinel watchgaurd is an intelligent and reliable system that constantly monitors your surroundings to
+              ensure your safety and protection.</h4>
+            <div class="startBTN">
+              <button id="startBTN" onmouseenter="hover()" onmouseleave="unhover()" onmousedown="press()"
+                onmouseup="release()">Start</button>
+            </div>
           </div>
         </div>
-          
+
       </div>
-        <!-- Swiper-->
-        <!-- <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="4859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
+      <!-- Swiper-->
+      <!-- <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true" data-autoplay="4859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
           <div class="swiper-wrapper text-center">
             <div class="swiper-slide" data-slide-bg="images/slider-1-slide-2-1770x742.jpg">
               <div class="swiper-slide-caption section-md">
@@ -123,363 +152,448 @@
           </div>
         </section> -->
 
+    </div>
+    <!-- See all services-->
+    <section class="section section-sm section-first bg-default text-center" id="services">
+      <div class="container">
+        <div class="row row-30 justify-content-center">
+          <div class="col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp"><img src="images/service.jpg" alt=""
+              width="465" height="592" />
+          </div>
+          <div class="col-lg-7 col-xl-6">
+            <div class="row row-30">
+              <div class="col-sm-6 wow fadeInRight">
+                <article class="box-icon-modern box-icon-modern-custom">
+                  <div>
+                    <h3 class="box-icon-modern-big-title">What We Offer</h3>
+                    <div class="box-icon-modern-decor"></div><a class="button button-primary button-ujarak"
+                      href="#">View All Services</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-6 wow fadeInRight" data-wow-delay=".1s">
+                <article class="box-icon-modern box-icon-modern-2">
+                  <div class="box-icon-modern-icon emotion-icon"><img src="images/emotionicon.png" alt=""></div>
+                  <h5 class="box-icon-modern-title"><a href="#">EMOTION<br>DETECTION</a></h5>
+                  <div class="box-icon-modern-decor"></div>
+                  <p class="box-icon-modern-text">This Detection is designed to detect
+                    and analyze the emotional state of customers, allowing businesses to
+                    measure their satisfaction levels and respond proactively to their
+                    needs.</p>
+                </article>
+              </div>
+              <div class="col-sm-6 wow fadeInRight" data-wow-delay=".2s">
+                <article class="box-icon-modern box-icon-modern-2">
+                  <div class="box-icon-modern-icon falling-icon"><img src="images/fall.png" alt=""></div>
+                  <h5 class="box-icon-modern-title"><a href="#">FALL<br>DETECTION</a></h5>
+                  <div class="box-icon-modern-decor"></div>
+                  <p class="box-icon-modern-text">With advanced sensors and algorithms, this Detection can deploy
+                    safety features, call for emergency assistance, and even analyze
+                    your movements to identify areas where you may be at risk of
+                    falling.</p>
+                </article>
+              </div>
+              <div class="col-sm-6 wow fadeInRight" data-wow-delay=".3s">
+                <article class="box-icon-modern box-icon-modern-2">
+                  <div class="box-icon-modern-icon linearicons-outbox"></div>
+                  <h5 class="box-icon-modern-title"><a href="#">SENTINEL<br>DETECTION</a></h5>
+                  <div class="box-icon-modern-decor"></div>
+                  <p class="box-icon-modern-text">A bundle were both Emotion Detection and fall detection in one place.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- See all services-->
-      <section class="section section-sm section-first bg-default text-center" id="services">
-        <div class="container">
-          <div class="row row-30 justify-content-center">
-            <div class="col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp"><img src="images/service.jpg" alt="" width="465" height="592"/>
-            </div>
-            <div class="col-lg-7 col-xl-6">
-              <div class="row row-30">
-                <div class="col-sm-6 wow fadeInRight">
-                  <article class="box-icon-modern box-icon-modern-custom">
-                    <div>
-                      <h3 class="box-icon-modern-big-title">What We Offer</h3>
-                      <div class="box-icon-modern-decor"></div><a class="button button-primary button-ujarak" href="#">View All Services</a>
-                    </div>
-                  </article>
-                </div>
-                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".1s">
-                  <article class="box-icon-modern box-icon-modern-2">
-                    <div class="box-icon-modern-icon emotion-icon"><img src="images/emotionicon.png" alt=""></div>
-                    <h5 class="box-icon-modern-title"><a href="#">EMOTION<br>DETECTION</a></h5>
-                    <div class="box-icon-modern-decor"></div>
-                    <p class="box-icon-modern-text">This Detection is designed to detect
-                      and analyze the emotional state of customers, allowing businesses to
-                      measure their satisfaction levels and respond proactively to their
-                      needs.</p>
-                  </article>
-                </div>
-                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".2s">
-                  <article class="box-icon-modern box-icon-modern-2">
-                    <div class="box-icon-modern-icon falling-icon"><img src="images/fall.png" alt=""></div>
-                    <h5 class="box-icon-modern-title"><a href="#">FALL<br>DETECTION</a></h5>
-                    <div class="box-icon-modern-decor"></div>
-                    <p class="box-icon-modern-text">With advanced sensors and algorithms, this Detection can deploy
-                      safety features, call for emergency assistance, and even analyze
-                      your movements to identify areas where you may be at risk of
-                      falling.</p>
-                  </article>
-                </div>
-                <div class="col-sm-6 wow fadeInRight" data-wow-delay=".3s">
-                  <article class="box-icon-modern box-icon-modern-2">
-                    <div class="box-icon-modern-icon linearicons-outbox"></div>
-                    <h5 class="box-icon-modern-title"><a href="#">SENTINEL<br>DETECTION</a></h5>
-                    <div class="box-icon-modern-decor"></div>
-                    <p class="box-icon-modern-text">A bundle were both Emotion Detection and fall detection in one place.</p>
-                  </article>
-                </div>
+    </section>
+
+    <!-- Cta-->
+    <section class="section section-fluid bg-default">
+      <div class="parallax-container" data-parallax-img="images/parallax-1.jpg">
+        <div class="parallax-content section-xl context-dark bg-overlay-68 bg-mobile-overlay">
+          <div class="container">
+            <div class="row row-30 justify-content-end text-right">
+              <div class="col-sm-7">
+                <h3 class="wow fadeInLeft">Let's Develop Your Next Great App!</h3>
+                <p>Do you need a unique software solution for your company? We know how to help you!</p>
+                <div class="group-sm group-middle group justify-content-end"><a
+                    class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal">Get in Touch</a><a
+                    class="button button-white-outline button-ujarak" href="#">Learn More</a></div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Cta-->
-      <section class="section section-fluid bg-default">
-        <div class="parallax-container" data-parallax-img="images/parallax-1.jpg">
-          <div class="parallax-content section-xl context-dark bg-overlay-68 bg-mobile-overlay">
-            <div class="container">
-              <div class="row row-30 justify-content-end text-right">
-                <div class="col-sm-7">
-                  <h3 class="wow fadeInLeft">Let's Develop Your Next Great App!</h3>
-                  <p>Do you need a unique software solution for your company? We know how to help you!</p>
-                  <div class="group-sm group-middle group justify-content-end"><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal">Get in Touch</a><a class="button button-white-outline button-ujarak" href="#">Learn More</a></div>
+    <!-- Latest Projects-->
+    <section class="section section-sm section-fluid bg-default text-center" id="projects">
+      <div class="container-fluid">
+        <h2 class="wow fadeInLeft">Latest Projects</h2>
+        <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">In our portfolio, you can browse the latest products
+          developed for our clients for different corporate purposes. Our qualified team of interface designers and
+          software developers is always ready to create something unique for you.</p>
+        <div class="isotope-filters isotope-filters-horizontal">
+          <button
+            class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha"
+            data-custom-toggle="#isotope-3" data-custom-toggle-hide-on-blur="true"
+            data-custom-toggle-disable-on-blur="true"><span class="icon fa fa-caret-down"></span>Filter</button>
+          <ul class="isotope-filters-list" id="isotope-3">
+            <li><a class="active" href="#" data-isotope-filter="*" data-isotope-group="gallery">All</a></li>
+            <li><a href="#" data-isotope-filter="Type 1" data-isotope-group="gallery">mobile Apps</a></li>
+            <li><a href="#" data-isotope-filter="Type 2" data-isotope-group="gallery">Custom Software</a></li>
+            <li><a href="#" data-isotope-filter="Type 3" data-isotope-group="gallery">QA & Testing</a></li>
+            <li><a href="#" data-isotope-filter="Type 4" data-isotope-group="gallery">UX and Design</a></li>
+          </ul>
+        </div>
+        <div class="row row-30 isotope" data-isotope-layout="fitRows" data-isotope-group="gallery"
+          data-lightgallery="group">
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 4">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-1-420x350.jpg" alt="" width="420"
+                  height="350" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="images/grid-gallery-1-1200x800-original.jpg" data-lightgallery="item"><img
+                      src="images/fullwidth-gallery-1-420x350.jpg" alt="" width="420" height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">FinStep</a></h5>
+                </div>
+                <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI
+                  that you won’t find anywhere else.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 1"
+            data-wow-delay=".1s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-2-420x350.jpg" alt="" width="420"
+                  height="350" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="images/grid-gallery-2-1200x800-original.jpg" data-lightgallery="item"><img
+                      src="images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">Mobile Finance</a></h5>
+                </div>
+                <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI
+                  that you won’t find anywhere else.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 2"
+            data-wow-delay=".2s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-3-420x350.jpg" alt="" width="420"
+                  height="350" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="images/grid-gallery-3-1200x800-original.jpg" data-lightgallery="item"><img
+                      src="images/fullwidth-gallery-3-420x350.jpg" alt="" width="420" height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">Q-Manage</a></h5>
+                </div>
+                <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI
+                  that you won’t find anywhere else.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 3"
+            data-wow-delay=".3s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-4-420x350.jpg" alt="" width="420"
+                  height="350" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="images/grid-gallery-4-1200x800-original.jpg" data-lightgallery="item"><img
+                      src="images/fullwidth-gallery-4-420x350.jpg" alt="" width="420" height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">WeatherCast</a></h5>
+                </div>
+                <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI
+                  that you won’t find anywhere else.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-5-420x350.jpg" alt="" width="420"
+                  height="350" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="images/grid-gallery-5-1200x800-original.jpg" data-lightgallery="item"><img
+                      src="images/fullwidth-gallery-5-420x350.jpg" alt="" width="420" height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">Home Calendar</a></h5>
+                </div>
+                <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI
+                  that you won’t find anywhere else.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 1"
+            data-wow-delay=".1s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-6-420x350.jpg" alt="" width="420"
+                  height="350" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="images/grid-gallery-6-1200x800-original.jpg" data-lightgallery="item"><img
+                      src="images/fullwidth-gallery-6-420x350.jpg" alt="" width="420" height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">MPlanner</a></h5>
+                </div>
+                <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI
+                  that you won’t find anywhere else.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 2"
+            data-wow-delay=".2s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-7-420x350.jpg" alt="" width="420"
+                  height="350" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="images/grid-gallery-7-1200x800-original.jpg" data-lightgallery="item"><img
+                      src="images/fullwidth-gallery-7-420x350.jpg" alt="" width="420" height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">Alice Messenger</a></h5>
+                </div>
+                <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI
+                  that you won’t find anywhere else.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3"
+            data-wow-delay=".3s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-8-420x350.jpg" alt="" width="420"
+                  height="350" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="images/grid-gallery-8-1200x800-original.jpg" data-lightgallery="item"><img
+                      src="images/fullwidth-gallery-8-420x350.jpg" alt="" width="420" height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">WiseMoney</a></h5>
+                </div>
+                <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI
+                  that you won’t find anywhere else.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Years of experience-->
+    <section class="section section-sm bg-default">
+      <div class="container">
+        <div class="row row-30 row-xl-24 justify-content-center align-items-center align-items-lg-start text-left">
+          <div class="col-md-6 col-lg-5 col-xl-4 text-center"><a class="text-img" href="#">
+              <div id="particles-js"></div>
+              <span class=""><img src="images/mall.jpg" alt=""></span>
+            </a></div>
+          <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4">
+            <div class="text-width-extra-small offset-top-lg-24 wow fadeInUp">
+              <h3 class="title-decoration-lines-left">Security and Accuracy at its Finest</h3>
+              <p class="text-gray-500">Sentinel Watchguard has a team of highly experienced app designers and developers
+                creating unique software for you.</p><a class="button button-secondary button-pipaluk" href="#">Get in
+                touch</a>
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
+            <div class="row justify-content-center border-2-column offset-top-xl-26">
+              <div class="col-9 col-sm-6">
+                <div class="counter-amy">
+                  <div class="counter-amy-number"><span class="counter">99.75</span><span class="symbol">%</span>
+                  </div>
+                  <h6 class="counter-amy-title">Accuracy</h6>
+                </div>
+              </div>
+              <div class="col-9 col-sm-6">
+                <div class="counter-amy">
+                  <div class="counter-amy-number"><span class="counter">40</span>
+                  </div>
+                  <h6 class="counter-amy-title">Consultants</h6>
+                </div>
+              </div>
+              <div class="col-9 col-sm-6">
+                <div class="counter-amy">
+                  <div class="counter-amy-number"><span class="counter">12</span>
+                  </div>
+                  <h6 class="counter-amy-title">Awards won</h6>
+                </div>
+              </div>
+              <div class="col-9 col-sm-6">
+                <div class="counter-amy">
+                  <div class="counter-amy-number"><span class="counter">160</span>
+                  </div>
+                  <h6 class="counter-amy-title">Employees</h6>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-lg-6 col-xl-12 align-self-center">
+            <div class="row row-30 justify-content-center">
+              <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft"><a class="clients-classic" href="#"><img
+                    src="images/CC-Beirut.png" alt="" width="270" height="117" /></a></div>
+              <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".1s"><a
+                  class="clients-classic" href="www.rhu.edu.lb/home"><img src="images/rhu.jpg" alt="" width="270"
+                    height="117" /></a></div>
+              <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".2s"><a
+                  class="clients-classic" href="#"><img src="images/citymall.png" alt="" width="270" height="117" /></a>
+              </div>
+              <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".3s"><a
+                  class="clients-classic" href="#"><img src="images/abc.jpg" alt="" width="270" height="117" /></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Latest Projects-->
-      <section class="section section-sm section-fluid bg-default text-center" id="projects">
-        <div class="container-fluid">
-          <h2 class="wow fadeInLeft">Latest Projects</h2>
-          <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">In our portfolio, you can browse the latest products developed for our clients for different corporate purposes. Our qualified team of interface designers and software developers is always ready to create something unique for you.</p>
-          <div class="isotope-filters isotope-filters-horizontal">
-            <button class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha" data-custom-toggle="#isotope-3" data-custom-toggle-hide-on-blur="true" data-custom-toggle-disable-on-blur="true"><span class="icon fa fa-caret-down"></span>Filter</button>
-            <ul class="isotope-filters-list" id="isotope-3">
-              <li><a class="active" href="#" data-isotope-filter="*" data-isotope-group="gallery">All</a></li>
-              <li><a href="#" data-isotope-filter="Type 1" data-isotope-group="gallery">mobile Apps</a></li>
-              <li><a href="#" data-isotope-filter="Type 2" data-isotope-group="gallery">Custom Software</a></li>
-              <li><a href="#" data-isotope-filter="Type 3" data-isotope-group="gallery">QA & Testing</a></li>
-              <li><a href="#" data-isotope-filter="Type 4" data-isotope-group="gallery">UX and Design</a></li>
+    <!-- Meet The Team-->
+    <section class="section section-sm section-fluid bg-default" id="team">
+      <div class="container-fluid">
+        <h2>Meet The Team</h2>
+        <div class="row row-sm row-30 justify-content-center">
+          <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight">
+            <!-- Team Classic-->
+            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img
+                  src="images/team/mohammad.png" alt="" /></a>
+              <div class="team-classic-caption">
+                <h4 class="team-classic-name"><a href="#">Mohammad Homsi</a></h4>
+                <p class="team-classic-status">Head of Programming</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".1s">
+            <!-- Team Classic-->
+            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img
+                  src="images/team/jalal.jpeg" alt="" /></a>
+              <div class="team-classic-caption">
+                <h4 class="team-classic-name"><a href="#">Jalal Ghannam</a></h4>
+                <p class="team-classic-status">Senior Developer</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
+            <!-- Team Classic-->
+            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img
+                  src="images/team/sara2.jpeg" alt="" /></a>
+              <div class="team-classic-caption">
+                <h4 class="team-classic-name"><a href="#">Sara Baassiri</a></h4>
+                <p class="team-classic-status">UI Designer</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".3s">
+            <!-- Team Classic-->
+            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img
+                  src="images/team/fawzy.jpeg" alt="" /></a>
+              <div class="team-classic-caption">
+                <h4 class="team-classic-name"><a href="#">Fawzy Mozayen</a></h4>
+                <p class="team-classic-status">Software Developer</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".3s">
+            <!-- Team Classic-->
+            <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img
+                  src="images/team/fawzy.jpeg" alt="" /></a>
+              <div class="team-classic-caption">
+                <h4 class="team-classic-name"><a href="#">Bilal Jibaly</a></h4>
+                <p class="team-classic-status">Intern</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+  <!-- You dream — we embody-->
+  <section class="section section-sm bg-default text-md-left">
+    <div class="container">
+      <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
+        <div class="col-lg-6 col-xl-5 wow fadeInLeft">
+          <h2>Get More With Us</h2>
+          <!-- Bootstrap tabs-->
+          <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big text-center text-md-left" id="tabs-6">
+            <!-- Nav tabs-->
+            <ul class="nav nav-tabs">
+              <li class="nav-item" role="presentation"><a class="nav-link nav-link-big active" href="#tabs-6-1"
+                  data-toggle="tab">01</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-2"
+                  data-toggle="tab">02</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-3"
+                  data-toggle="tab">03</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-4"
+                  data-toggle="tab">04</a></li>
             </ul>
-          </div>
-          <div class="row row-30 isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
-            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 4">
-              <!-- Thumbnail Classic-->
-              <article class="thumbnail thumbnail-classic thumbnail-md">
-                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-1-420x350.jpg" alt="" width="420" height="350"/>
-                </div>
-                <div class="thumbnail-classic-caption">
-                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-1-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-1-420x350.jpg" alt="" width="420" height="350"/></a>
-                    <h5 class="thumbnail-classic-title"><a href="#">FinStep</a></h5>
-                  </div>
-                  <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 1" data-wow-delay=".1s">
-              <!-- Thumbnail Classic-->
-              <article class="thumbnail thumbnail-classic thumbnail-md">
-                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350"/>
-                </div>
-                <div class="thumbnail-classic-caption">
-                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-2-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-2-420x350.jpg" alt="" width="420" height="350"/></a>
-                    <h5 class="thumbnail-classic-title"><a href="#">Mobile Finance</a></h5>
-                  </div>
-                  <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 2" data-wow-delay=".2s">
-              <!-- Thumbnail Classic-->
-              <article class="thumbnail thumbnail-classic thumbnail-md">
-                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-3-420x350.jpg" alt="" width="420" height="350"/>
-                </div>
-                <div class="thumbnail-classic-caption">
-                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-3-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-3-420x350.jpg" alt="" width="420" height="350"/></a>
-                    <h5 class="thumbnail-classic-title"><a href="#">Q-Manage</a></h5>
-                  </div>
-                  <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 3" data-wow-delay=".3s">
-              <!-- Thumbnail Classic-->
-              <article class="thumbnail thumbnail-classic thumbnail-md">
-                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-4-420x350.jpg" alt="" width="420" height="350"/>
-                </div>
-                <div class="thumbnail-classic-caption">
-                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-4-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-4-420x350.jpg" alt="" width="420" height="350"/></a>
-                    <h5 class="thumbnail-classic-title"><a href="#">WeatherCast</a></h5>
-                  </div>
-                  <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3">
-              <!-- Thumbnail Classic-->
-              <article class="thumbnail thumbnail-classic thumbnail-md">
-                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-5-420x350.jpg" alt="" width="420" height="350"/>
-                </div>
-                <div class="thumbnail-classic-caption">
-                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-5-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-5-420x350.jpg" alt="" width="420" height="350"/></a>
-                    <h5 class="thumbnail-classic-title"><a href="#">Home Calendar</a></h5>
-                  </div>
-                  <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 1" data-wow-delay=".1s">
-              <!-- Thumbnail Classic-->
-              <article class="thumbnail thumbnail-classic thumbnail-md">
-                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-6-420x350.jpg" alt="" width="420" height="350"/>
-                </div>
-                <div class="thumbnail-classic-caption">
-                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-6-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-6-420x350.jpg" alt="" width="420" height="350"/></a>
-                    <h5 class="thumbnail-classic-title"><a href="#">MPlanner</a></h5>
-                  </div>
-                  <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 2" data-wow-delay=".2s">
-              <!-- Thumbnail Classic-->
-              <article class="thumbnail thumbnail-classic thumbnail-md">
-                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-7-420x350.jpg" alt="" width="420" height="350"/>
-                </div>
-                <div class="thumbnail-classic-caption">
-                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-7-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-7-420x350.jpg" alt="" width="420" height="350"/></a>
-                    <h5 class="thumbnail-classic-title"><a href="#">Alice Messenger</a></h5>
-                  </div>
-                  <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 3" data-wow-delay=".3s">
-              <!-- Thumbnail Classic-->
-              <article class="thumbnail thumbnail-classic thumbnail-md">
-                <div class="thumbnail-classic-figure"><img src="images/fullwidth-gallery-8-420x350.jpg" alt="" width="420" height="350"/>
-                </div>
-                <div class="thumbnail-classic-caption">
-                  <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60" href="images/grid-gallery-8-1200x800-original.jpg" data-lightgallery="item"><img src="images/fullwidth-gallery-8-420x350.jpg" alt="" width="420" height="350"/></a>
-                    <h5 class="thumbnail-classic-title"><a href="#">WiseMoney</a></h5>
-                  </div>
-                  <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Years of experience-->
-      <section class="section section-sm bg-default">
-        <div class="container">
-          <div class="row row-30 row-xl-24 justify-content-center align-items-center align-items-lg-start text-left">
-            <div class="col-md-6 col-lg-5 col-xl-4 text-center"><a class="text-img" href="#">
-                <div id="particles-js"></div>
-                <span class=""><img src="images/mall.jpg" alt=""></span></a></div>
-            <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4">
-              <div class="text-width-extra-small offset-top-lg-24 wow fadeInUp">
-                <h3 class="title-decoration-lines-left">Security and Accuracy at its Finest</h3>
-                <p class="text-gray-500">Sentinel Watchguard has a team of highly experienced app designers and developers creating unique software for you.</p><a class="button button-secondary button-pipaluk" href="#">Get in touch</a>
+            <!-- Tab panes-->
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="tabs-6-1">
+                <h5 class="font-weight-normal">FREE APPS</h5>
+                <p>We regularly upload new free apps to our website, which is fully accessible to our clients and
+                  subscribers. You can also find out about free apps in our blog.</p>
+                <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta"
+                    data-toggle="modal">Get in touch</a><a class="button button-default-outline button-wapasha"
+                    href="#">Learn More</a></div>
               </div>
-            </div>
-            <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
-              <div class="row justify-content-center border-2-column offset-top-xl-26">
-                <div class="col-9 col-sm-6">
-                  <div class="counter-amy">
-                    <div class="counter-amy-number"><span class="counter">99.75</span><span class="symbol">%</span>
-                    </div>
-                    <h6 class="counter-amy-title">Accuracy</h6>
-                  </div>
-                </div>
-                <div class="col-9 col-sm-6">
-                  <div class="counter-amy">
-                    <div class="counter-amy-number"><span class="counter">40</span>
-                    </div>
-                    <h6 class="counter-amy-title">Consultants</h6>
-                  </div>
-                </div>
-                <div class="col-9 col-sm-6">
-                  <div class="counter-amy">
-                    <div class="counter-amy-number"><span class="counter">12</span>
-                    </div>
-                    <h6 class="counter-amy-title">Awards won</h6>
-                  </div>
-                </div>
-                <div class="col-9 col-sm-6">
-                  <div class="counter-amy">
-                    <div class="counter-amy-number"><span class="counter">160</span>
-                    </div>
-                    <h6 class="counter-amy-title">Employees</h6>
-                  </div>
-                </div>
+              <div class="tab-pane fade" id="tabs-6-2">
+                <h5 class="font-weight-normal">GET SOCIAL</h5>
+                <p>Every app we develop has built-in social support that allows you to stay connected to your accounts
+                  on Facebook, Instagram, Twitter and other networks.</p>
+                <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta"
+                    data-toggle="modal">Get in touch</a><a class="button button-default-outline button-wapasha"
+                    href="#">Learn More</a></div>
               </div>
-            </div>
-            <div class="col-lg-6 col-xl-12 align-self-center">
-              <div class="row row-30 justify-content-center">
-                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" ><a class="clients-classic" href="#"><img src="images/CC-Beirut.png" alt="" width="270" height="117"/></a></div>
-                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft"  data-wow-delay=".1s"><a class="clients-classic" href="www.rhu.edu.lb/home"><img src="images/rhu.jpg" alt="" width="270" height="117"/></a></div>
-                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft" data-wow-delay=".2s"><a class="clients-classic" href="#"><img src="images/citymall.png" alt="" width="270" height="117"/></a></div>
-                <div class="col-sm-6 col-md-5 col-lg-6 col-xl-3 wow fadeInLeft"  data-wow-delay=".3s"><a class="clients-classic" href="#"><img src="images/abc.jpg" alt="" width="270" height="117"/></a></div>
+              <div class="tab-pane fade" id="tabs-6-3">
+                <h5 class="font-weight-normal">CUSTOMER SERVICE</h5>
+                <p>Every customer of RatherApp can get access to our friendly and qualified 24/7 support via chat or
+                  phone. Fell free to ask us any question!</p>
+                <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta"
+                    data-toggle="modal">Get in touch</a><a class="button button-default-outline button-wapasha"
+                    href="#">Learn More</a></div>
+              </div>
+              <div class="tab-pane fade" id="tabs-6-4">
+                <h5 class="font-weight-normal">GREAT USABILITY</h5>
+                <p>All our apps are designed to have great usability in order to easily operate our applications. That
+                  is why our software has high ratings and lots of awards.</p>
+                <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta"
+                    data-toggle="modal">Get in touch</a><a class="button button-default-outline button-wapasha"
+                    href="#">Learn More</a></div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Meet The Team-->
-      <section class="section section-sm section-fluid bg-default" id="team">
-        <div class="container-fluid">
-          <h2>Meet The Team</h2>
-          <div class="row row-sm row-30 justify-content-center">
-            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight">
-              <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team/mohammad.png" alt=""/></a>
-                <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="#">Mohammad Homsi</a></h4>
-                  <p class="team-classic-status">Head of Programming</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".1s">
-              <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team/jalal.jpeg" alt=""/></a>
-                <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="#">Jalal Ghannam</a></h4>
-                  <p class="team-classic-status">Senior Developer</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
-              <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team/sara2.jpeg" alt=""/></a>
-                <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="#">Sara Baassiri</a></h4>
-                  <p class="team-classic-status">UI Designer</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".3s">
-              <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team/fawzy.jpeg" alt=""/></a>
-                <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="#">Fawzy Mozayen</a></h4>
-                  <p class="team-classic-status">Software Developer</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-3 wow fadeInRight" data-wow-delay=".3s">
-              <!-- Team Classic-->
-              <article class="team-classic team-classic-lg"><a class="team-classic-figure" href="#"><img src="images/team/fawzy.jpeg" alt=""/></a>
-                <div class="team-classic-caption">
-                  <h4 class="team-classic-name"><a href="#">Bilal Jibaly</a></h4>
-                  <p class="team-classic-status">Intern</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
+        <div class="col-lg-6 text-center wow fadeInUp" data-wow-delay=".1s">
+          <div class="owl-carousel owl-style-1" data-items="2" data-stage-padding="0" data-loop="true" data-margin="0"
+            data-mouse-drag="true" data-autoplay="true"><a class="box-device" href="#"><img
+                src="images/index-4-313x580.png" alt="" width="313" height="580" /></a><a class="box-device"
+              href="#"><img src="images/index-5-313x580.png" alt="" width="313" height="580" /></a><a class="box-device"
+              href="#"><img src="images/index-4-313x580.png" alt="" width="313" height="580" /></a><a class="box-device"
+              href="#"><img src="images/index-5-313x580.png" alt="" width="313" height="580" /></a></div>
         </div>
       </div>
     </div>
-      </section>
+  </section>
 
-      <!-- You dream — we embody-->
-      <section class="section section-sm bg-default text-md-left">
-        <div class="container">
-          <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
-            <div class="col-lg-6 col-xl-5 wow fadeInLeft">
-              <h2>Get More With Us</h2>
-              <!-- Bootstrap tabs-->
-              <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big text-center text-md-left" id="tabs-6">
-                <!-- Nav tabs-->
-                <ul class="nav nav-tabs">
-                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big active" href="#tabs-6-1" data-toggle="tab">01</a></li>
-                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-2" data-toggle="tab">02</a></li>
-                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-3" data-toggle="tab">03</a></li>
-                  <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-4" data-toggle="tab">04</a></li>
-                </ul>
-                <!-- Tab panes-->
-                <div class="tab-content">
-                  <div class="tab-pane fade show active" id="tabs-6-1">
-                    <h5 class="font-weight-normal">FREE APPS</h5>
-                    <p>We regularly upload new free apps to our website, which is fully accessible to our clients and subscribers. You can also find out about free apps in our blog.</p>
-                    <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal">Get in touch</a><a class="button button-default-outline button-wapasha" href="#">Learn More</a></div>
-                  </div>
-                  <div class="tab-pane fade" id="tabs-6-2">
-                    <h5 class="font-weight-normal">GET SOCIAL</h5>
-                    <p>Every app we develop has built-in social support that allows you to stay connected to your accounts on Facebook, Instagram, Twitter and other networks.</p>
-                    <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal">Get in touch</a><a class="button button-default-outline button-wapasha" href="#">Learn More</a></div>
-                  </div>
-                  <div class="tab-pane fade" id="tabs-6-3">
-                    <h5 class="font-weight-normal">CUSTOMER SERVICE</h5>
-                    <p>Every customer of RatherApp can get access to our friendly and qualified 24/7 support via chat or phone. Fell free to ask us any question!</p>
-                    <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal">Get in touch</a><a class="button button-default-outline button-wapasha" href="#">Learn More</a></div>
-                  </div>
-                  <div class="tab-pane fade" id="tabs-6-4">
-                    <h5 class="font-weight-normal">GREAT USABILITY</h5>
-                    <p>All our apps are designed to have great usability in order to easily operate our applications. That is why our software has high ratings and lots of awards.</p>
-                    <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta" data-toggle="modal">Get in touch</a><a class="button button-default-outline button-wapasha" href="#">Learn More</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 text-center wow fadeInUp" data-wow-delay=".1s">
-              <div class="owl-carousel owl-style-1" data-items="2" data-stage-padding="0" data-loop="true" data-margin="0" data-mouse-drag="true" data-autoplay="true"><a class="box-device" href="#"><img src="images/index-4-313x580.png" alt="" width="313" height="580"/></a><a class="box-device" href="#"><img src="images/index-5-313x580.png" alt="" width="313" height="580"/></a><a class="box-device" href="#"><img src="images/index-4-313x580.png" alt="" width="313" height="580"/></a><a class="box-device" href="#"><img src="images/index-5-313x580.png" alt="" width="313" height="580"/></a></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- What people Say-->
-      <!-- <section class="section section-sm section-bottom-70 section-fluid bg-default">
+  <!-- What people Say-->
+  <!-- <section class="section section-sm section-bottom-70 section-fluid bg-default">
         <div class="container-fluid">
           <h2>What people Say</h2>
           <div class="row row-50 row-sm">
@@ -532,78 +646,81 @@
         </div>
       </section> -->
 
-      <!-- Pricing-->
-      <section class="section section-sm section-bottom-70 section-fluid bg-default">
-        <div class="container">
-          <h2>Pricing</h2>
-          <div class="row row-30 justify-content-center">
-            <div class="col-md-6 col-lg-5 col-xl-4">
-              <div class="box-pricing box-pricing-black">
-                <div class="box-pricing-body">
-                  <h5 class="box-pricing-title">Emotion Detection</h5>
-                  <h3 class="box-pricing-price">$500.00</h3>
-                  <div class="box-pricing-time">starting at</div>
-                  <div class="box-pricing-divider">
-                    <div class="divider"></div><span>Basic</span>
-                  </div>
-                  <ul class="box-pricing-list">
-                    <li class="active">Concept development</li>
-                    <li class="active">UI design</li>
-                    <li>Configuration management</li>
-                    <li>Software quality assurance</li>
-                    <li>App integration</li>
-                  </ul>
-                </div>
-                <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">Get started</a></div>
+  <!-- Pricing-->
+  <section class="section section-sm section-bottom-70 section-fluid bg-default">
+    <div class="container">
+      <h2>Pricing</h2>
+      <div class="row row-30 justify-content-center">
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <div class="box-pricing box-pricing-black">
+            <div class="box-pricing-body">
+              <h5 class="box-pricing-title">Emotion Detection</h5>
+              <h3 class="box-pricing-price">$500.00</h3>
+              <div class="box-pricing-time">starting at</div>
+              <div class="box-pricing-divider">
+                <div class="divider"></div><span>Basic</span>
               </div>
+              <ul class="box-pricing-list">
+                <li class="active">Concept development</li>
+                <li class="active">UI design</li>
+                <li>Configuration management</li>
+                <li>Software quality assurance</li>
+                <li>App integration</li>
+              </ul>
             </div>
-            <div class="col-md-6 col-lg-5 col-xl-4">
-              <div class="box-pricing box-pricing-black box-pricing-popular">
-                <div class="box-pricing-body">
-                  <h5 class="box-pricing-title">Fall Detection</h5>
-                  <h3 class="box-pricing-price">$800.00</h3>
-                  <div class="box-pricing-time">starting at</div>
-                  <div class="box-pricing-divider">
-                    <div class="divider"></div><span>Optimal</span>
-                  </div>
-                  <ul class="box-pricing-list">
-                    <li class="active">Concept development</li>
-                    <li class="active">UI design</li>
-                    <li class="active">Configuration management</li>
-                    <li class="active">Software quality assurance</li>
-                    <li>App integration</li>
-                  </ul>
-                </div>
-                <div class="box-pricing-button"><a class="button button-lg button-block button-primary" href="#">Get started</a></div>
-                <div class="box-pricing-badge">popular</div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-4">
-              <div class="box-pricing box-pricing-black">
-                <div class="box-pricing-body">
-                  <h5 class="box-pricing-title">Sentinel Detection</h5>
-                  <h3 class="box-pricing-price">$1200.00</h3>
-                  <div class="box-pricing-time">starting at</div>
-                  <div class="box-pricing-divider">
-                    <div class="divider"></div><span>Ultimate</span>
-                  </div>
-                  <ul class="box-pricing-list">
-                    <li class="active">Concept development</li>
-                    <li class="active">UI design</li>
-                    <li class="active">Configuration management</li>
-                    <li class="active">Software quality assurance</li>
-                    <li class="active">App integration</li>
-                  </ul>
-                </div>
-                <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">Get started</a></div>
-              </div>
-            </div>
+            <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">Get
+                started</a></div>
           </div>
         </div>
-      </section>
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <div class="box-pricing box-pricing-black box-pricing-popular">
+            <div class="box-pricing-body">
+              <h5 class="box-pricing-title">Fall Detection</h5>
+              <h3 class="box-pricing-price">$800.00</h3>
+              <div class="box-pricing-time">starting at</div>
+              <div class="box-pricing-divider">
+                <div class="divider"></div><span>Optimal</span>
+              </div>
+              <ul class="box-pricing-list">
+                <li class="active">Concept development</li>
+                <li class="active">UI design</li>
+                <li class="active">Configuration management</li>
+                <li class="active">Software quality assurance</li>
+                <li>App integration</li>
+              </ul>
+            </div>
+            <div class="box-pricing-button"><a class="button button-lg button-block button-primary" href="#">Get
+                started</a></div>
+            <div class="box-pricing-badge">popular</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <div class="box-pricing box-pricing-black">
+            <div class="box-pricing-body">
+              <h5 class="box-pricing-title">Sentinel Detection</h5>
+              <h3 class="box-pricing-price">$1200.00</h3>
+              <div class="box-pricing-time">starting at</div>
+              <div class="box-pricing-divider">
+                <div class="divider"></div><span>Ultimate</span>
+              </div>
+              <ul class="box-pricing-list">
+                <li class="active">Concept development</li>
+                <li class="active">UI design</li>
+                <li class="active">Configuration management</li>
+                <li class="active">Software quality assurance</li>
+                <li class="active">App integration</li>
+              </ul>
+            </div>
+            <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">Get
+                started</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- Latest blog posts-->
-      <!-- <section class="section section-sm bg-default" id="news">
+  <!-- Latest blog posts-->
+  <!-- <section class="section section-sm bg-default" id="news">
         <div class="container">
           <h2>Latest blog posts</h2>
           <div class="row row-45">
@@ -641,88 +758,91 @@
         </div>
       </section> -->
 
-      <!-- Contact information-->
-      <section class="section section-sm bg-default">
-        <div class="container">
-          <div class="row row-30 justify-content-center">
-            <div class="col-sm-8 col-md-6 col-lg-4">
-              <article class="box-contacts">
-                <div class="box-contacts-body">
-                  <div class="box-contacts-icon fl-bigmug-line-cellphone55"></div>
-                  <div class="box-contacts-decor"></div>
-                  <p class="box-contacts-link"><a href="tel:#">+961 81-915-734</a></p>
-                  <p class="box-contacts-link"><a href="tel:#">+961 91-231-038</a></p>
-                </div>
-              </article>
+  <!-- Contact information-->
+  <section class="section section-sm bg-default">
+    <div class="container">
+      <div class="row row-30 justify-content-center">
+        <div class="col-sm-8 col-md-6 col-lg-4">
+          <article class="box-contacts">
+            <div class="box-contacts-body">
+              <div class="box-contacts-icon fl-bigmug-line-cellphone55"></div>
+              <div class="box-contacts-decor"></div>
+              <p class="box-contacts-link"><a href="tel:#">+961 81-915-734</a></p>
+              <p class="box-contacts-link"><a href="tel:#">+961 91-231-038</a></p>
             </div>
-            <div class="col-sm-8 col-md-6 col-lg-4">
-              <article class="box-contacts">
-                <div class="box-contacts-body">
-                  <div class="box-contacts-icon fl-bigmug-line-up104"></div>
-                  <div class="box-contacts-decor"></div>
-                  <p class="box-contacts-link"><a href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a></p>
-                </div>
-              </article>
+          </article>
+        </div>
+        <div class="col-sm-8 col-md-6 col-lg-4">
+          <article class="box-contacts">
+            <div class="box-contacts-body">
+              <div class="box-contacts-icon fl-bigmug-line-up104"></div>
+              <div class="box-contacts-decor"></div>
+              <p class="box-contacts-link"><a href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a></p>
             </div>
-            <div class="col-sm-8 col-md-6 col-lg-4">
-              <article class="box-contacts">
-                <div class="box-contacts-body">
-                  <div class="box-contacts-icon fl-bigmug-line-chat55"></div>
-                  <div class="box-contacts-decor"></div>
-                  <p class="box-contacts-link"><a href="mailto:#">mail@Sentinel.org</a></p>
-                  <p class="box-contacts-link"><a href="mailto:#">info@Sentinel.org</a></p>
-                </div>
-              </article>
+          </article>
+        </div>
+        <div class="col-sm-8 col-md-6 col-lg-4">
+          <article class="box-contacts">
+            <div class="box-contacts-body">
+              <div class="box-contacts-icon fl-bigmug-line-chat55"></div>
+              <div class="box-contacts-decor"></div>
+              <p class="box-contacts-link"><a href="mailto:#">mail@Sentinel.org</a></p>
+              <p class="box-contacts-link"><a href="mailto:#">info@Sentinel.org</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form-->
+  <section class="section section-sm section-last bg-default text-left" id="contacts">
+    <div class="container">
+      <article class="title-classic">
+        <div class="title-classic-title">
+          <h3>Get in touch</h3>
+        </div>
+        <div class="title-classic-text">
+          <p>If you have any questions, just fill in the contact form, and we will answer you shortly.</p>
+        </div>
+      </article>
+      <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global" data-form-type="contact"
+        method="post" action="bat/rd-mailform.php">
+        <div class="row row-14 gutters-14">
+          <div class="col-md-4">
+            <div class="form-wrap">
+              <input class="form-input" id="contact-your-name-2" type="text" name="name" data-constraints="@Required">
+              <label class="form-label" for="contact-your-name-2">Your Name</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-wrap">
+              <input class="form-input" id="contact-email-2" type="email" name="email"
+                data-constraints="@Email @Required">
+              <label class="form-label" for="contact-email-2">E-mail</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-wrap">
+              <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric">
+              <label class="form-label" for="contact-phone-2">Phone</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-wrap">
+              <label class="form-label" for="contact-message-2">Message</label>
+              <textarea class="form-input textarea-lg" id="contact-message-2" name="message"
+                data-constraints="@Required"></textarea>
             </div>
           </div>
         </div>
-      </section>
+        <button class="button button-primary button-pipaluk" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-      <!-- Contact Form-->
-      <section class="section section-sm section-last bg-default text-left" id="contacts">
-        <div class="container">
-          <article class="title-classic">
-            <div class="title-classic-title">
-              <h3>Get in touch</h3>
-            </div>
-            <div class="title-classic-text">
-              <p>If you have any questions, just fill in the contact form, and we will answer you shortly.</p>
-            </div>
-          </article>
-          <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-            <div class="row row-14 gutters-14">
-              <div class="col-md-4">
-                <div class="form-wrap">
-                  <input class="form-input" id="contact-your-name-2" type="text" name="name" data-constraints="@Required">
-                  <label class="form-label" for="contact-your-name-2">Your Name</label>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-wrap">
-                  <input class="form-input" id="contact-email-2" type="email" name="email" data-constraints="@Email @Required">
-                  <label class="form-label" for="contact-email-2">E-mail</label>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-wrap">
-                  <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric">
-                  <label class="form-label" for="contact-phone-2">Phone</label>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-wrap">
-                  <label class="form-label" for="contact-message-2">Message</label>
-                  <textarea class="form-input textarea-lg" id="contact-message-2" name="message" data-constraints="@Required"></textarea>
-                </div>
-              </div>
-            </div>
-            <button class="button button-primary button-pipaluk" type="submit">Send Message</button>
-          </form>
-        </div>
-      </section>
-
-      <!-- RD Google Map-->
-      <!-- <section class="section section-fluid">
+  <!-- RD Google Map-->
+  <!-- <section class="section section-fluid">
         Google Map
         <section class="section">
           <div class="google-map-container" data-center="6036 Richmond hwy., Alexandria, VA, 2230" data-zoom="5" data-styles="[{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;labels.text.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#444444&quot;}]},{&quot;featureType&quot;:&quot;landscape&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f2f2f2&quot;}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.business&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;road&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:45}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;elementType&quot;:&quot;labels.icon&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b4d4e1&quot;},{&quot;visibility&quot;:&quot;on&quot;}]}]">
@@ -734,91 +854,100 @@
         </section>
       </section> -->
 
-      <!-- Page Footer-->
-      <footer class="section section-fluid footer-minimal context-dark">
-        <div class="bg-gray-15">
-          <div class="container-fluid">
-            <div class="footer-minimal-inset oh">
-              <ul class="footer-list-category-2">
-                <li><a href="#">UI Design</a></li>
-                <li><a href="#">Windows/Mac OS Apps</a></li>
-                <li><a href="#">Android/iOS Apps</a></li>
-                <li><a href="#">Cloud Solutions</a></li>
-                <li><a href="#">Customer Support</a></li>
-              </ul>
-            </div>
-            <div class="footer-minimal-bottom-panel text-sm-left">
-              <div class="row row-10 align-items-md-center">
-                <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
-                  <div>
-                    <ul class="list-inline list-inline-sm footer-social-list-2">
-                      <li><a class="icon fa fa-facebook" href="#"></a></li>
-                      <li><a class="icon fa fa-twitter" href="#"></a></li>
-                      <li><a class="icon fa fa-google-plus" href="#"></a></li>
-                      <li><a class="icon fa fa-instagram" href="#"></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4 order-sm-first">
-                  <!-- Rights-->
-                  <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Sentinel Watchguard</span>
-                  </p>
-                </div>
-                <div class="col-sm-6 col-md-4 text-md-right"><span>All rights reserved.</span> <span>Design&nbsp;by&nbsp;<a href="">Sentinel Watchguard</a></span>
-                </div>
+  <!-- Page Footer-->
+  <footer class="section section-fluid footer-minimal context-dark">
+    <div class="bg-gray-15">
+      <div class="container-fluid">
+        <div class="footer-minimal-inset oh">
+          <ul class="footer-list-category-2">
+            <li><a href="#">UI Design</a></li>
+            <li><a href="#">Windows/Mac OS Apps</a></li>
+            <li><a href="#">Android/iOS Apps</a></li>
+            <li><a href="#">Cloud Solutions</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-minimal-bottom-panel text-sm-left">
+          <div class="row row-10 align-items-md-center">
+            <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+              <div>
+                <ul class="list-inline list-inline-sm footer-social-list-2">
+                  <li><a class="icon fa fa-facebook" href="#"></a></li>
+                  <li><a class="icon fa fa-twitter" href="#"></a></li>
+                  <li><a class="icon fa fa-google-plus" href="#"></a></li>
+                  <li><a class="icon fa fa-instagram" href="#"></a></li>
+                </ul>
               </div>
             </div>
-          </div>
-        </div>
-      </footer>
-
-      <div class="modal fade" id="modalCta" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4>Contact Us</h4>
-              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="col-sm-6 col-md-4 order-sm-first">
+              <!-- Rights-->
+              <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Sentinel
+                  Watchguard</span>
+              </p>
             </div>
-            <div class="modal-body">
-              <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global" data-form-type="contact-modal" method="post" action="bat/rd-mailform.php">
-                <div class="row row-14 gutters-14">
-                  <div class="col-12">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-modal-name" type="text" name="name" data-constraints="@Required">
-                      <label class="form-label" for="contact-modal-name">Your Name</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-modal-email" type="email" name="email" data-constraints="@Email @Required">
-                      <label class="form-label" for="contact-modal-email">E-mail</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-wrap">
-                      <input class="form-input" id="contact-modal-phone" type="text" name="phone" data-constraints="@Numeric">
-                      <label class="form-label" for="contact-modal-phone">Phone</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-wrap">
-                      <label class="form-label" for="contact-modal-message">Message</label>
-                      <textarea class="form-input textarea-lg" id="contact-modal-message" name="message" data-constraints="@Required"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <button class="button button-primary button-pipaluk" type="submit">Send Message</button>
-              </form>
+            <div class="col-sm-6 col-md-4 text-md-right"><span>All rights reserved.</span> <span>Design&nbsp;by&nbsp;<a
+                  href="">Sentinel Watchguard</a></span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <!-- Javascript-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-    <!-- coded by Himic-->
-  </body>
+  </footer>
+
+  <div class="modal fade" id="modalCta" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Contact Us</h4>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+          <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global"
+            data-form-type="contact-modal" method="post" action="bat/rd-mailform.php">
+            <div class="row row-14 gutters-14">
+              <div class="col-12">
+                <div class="form-wrap">
+                  <input class="form-input" id="contact-modal-name" type="text" name="name"
+                    data-constraints="@Required">
+                  <label class="form-label" for="contact-modal-name">Your Name</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-wrap">
+                  <input class="form-input" id="contact-modal-email" type="email" name="email"
+                    data-constraints="@Email @Required">
+                  <label class="form-label" for="contact-modal-email">E-mail</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-wrap">
+                  <input class="form-input" id="contact-modal-phone" type="text" name="phone"
+                    data-constraints="@Numeric">
+                  <label class="form-label" for="contact-modal-phone">Phone</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-modal-message">Message</label>
+                  <textarea class="form-input textarea-lg" id="contact-modal-message" name="message"
+                    data-constraints="@Required"></textarea>
+                </div>
+              </div>
+            </div>
+            <button class="button button-primary button-pipaluk" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Global Mailform Output-->
+  <div class="snackbars" id="form-output-global"></div>
+  <!-- Javascript-->
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- coded by Himic-->
+</body>
+
 </html>
