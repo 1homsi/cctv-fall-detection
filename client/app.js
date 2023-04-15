@@ -39,3 +39,17 @@ function updateImageSrc(val) {
 }
 
 
+function handleMenu(e) {
+    let menu = document.getElementById("Menu");
+    let open = document.getElementById("open");
+    let close = document.getElementById("close");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+        open.style.display = "block";
+        close.style.display = "none";
+    } else {
+        menu.style.display = "block";
+        open.style.display = "none";
+        close.style.display = "block";
+    }
+};

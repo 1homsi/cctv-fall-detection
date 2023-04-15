@@ -2,6 +2,7 @@ body {
   background-color: #f2f2f2;
   color: #212529;
   margin: 0;
+  padding: 0;
 }
 
 #NavBar {
@@ -44,32 +45,58 @@ body {
   color: #000;
 }
 
+#NavBar div > div {
+  color: #212529;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-right: 20px;
+  cursor: pointer;
+  width: 10px;
+}
+
+#NavBar div > div:hover {
+  color: #000;
+}
+
 #items {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   grid-gap: 20px; 
   width: 650px;
   margin: 0 auto;
-  margin-top: 15%;
+  margin-top: 10%;
 }
-
 
 #items a {
-  border-radius: 8px;
   background-color: #434242;
+  color: white;
+  border: none;
+  padding: 40px 40px;
+  font-size: 16px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
   text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bolder;
-  padding: 45px 40px;
   text-align: center;
-  display: inline-block;
-  transition: 0.3s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
+#items a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  transition: width 0.3s ease, height 0.3s ease;
+}
 
-
+#items a:hover::after {
+  width: 500px;
+  height: 500px;
+}
 
 #items a:hover {
   background-color: #484141;
@@ -127,3 +154,21 @@ button:hover {
 #main {
   text-align: center;
 }
+
+
+#close {
+  display: none;
+}
+
+#Menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
