@@ -1,6 +1,6 @@
 body {
-  background-color: #f2f2f2;
-  color: #212529;
+  background-color: #EEEEEE;
+  color: #CBE4DE;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -13,16 +13,17 @@ body {
   justify-content: space-between;
   height: 100px;
   width: 100%;
-  background-color: #917FB3;
-  border-bottom: 1px solid #bdbcbc;
+  background-color: #393E46;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 #NavBar h1 {
-  font-size: 40px;
+  font-size: 30px;
+  color: #EEEEEE;
   font-weight: bolder;
   margin-left: 20px;
   cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #NavBar div {
@@ -35,14 +36,14 @@ body {
 
 #NavBar a {
   text-decoration: none;
-  color: #fff;
+  color: #EEEEEE;
   font-size: 20px;
   font-weight: bolder;
   margin-right: 20px;
 }
 
 #NavBar a:hover {
-  color: #FDE2F3;
+  color: rgb(217, 209, 214);
   transition: 0.3s;
 }
 
@@ -56,42 +57,36 @@ body {
 }
 
 #NavBar div > div:hover {
-  color: #FDE2F3;
+  color: rgb(217, 209, 214);
   transition: 0.3s;
 }
 
 #items {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
-  grid-gap: 20px; 
+  grid-gap: 30px; 
   width: 650px;
   margin: 0 auto;
   margin-top: 10%;
 }
 
 #items a {
-  background-color: #434242;
-  color: white;
   border: none;
-  padding: 40px 40px;
-  font-size: 16px;
-  border-radius: 8px;
+  background-color: #393E46;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #EEEEEE;
+  padding: 30px 30px;
+  font-size: 20px;
+  border-radius: 20px;
   position: relative;
   overflow: hidden;
   text-decoration: none;
   text-align: center;
+  box-shadow: 0px 0px 22px -4px rgba(0,0,0,0.75);
 }
 
 #items a::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 100%;
+  background-color: #222831;
   transition: width 0.3s ease, height 0.3s ease;
 }
 
@@ -101,9 +96,8 @@ body {
 }
 
 #items a:hover {
-  background-color: #484141;
-  transition: 0.3s;
-  animation: bounceUp 0.9s;
+  background-color: #222831;
+  transition: 0.5s;
 }
 
 @keyframes bounceUp {
@@ -169,8 +163,37 @@ button:hover {
   left: 0;
   width: 200px;
   height: 100%;
-  background-color: #333;
+  background-color: #00ADB5;
+  border: #393E46;
   padding: 20px;
   transition: all 0.3s ease;
 }
 
+#Menu h1 {
+  color: #222831;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#Menu div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-inline: 10px;
+}
+
+#Menu a {
+  text-decoration: none;
+  color: #222831;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+#Menu a:hover {
+  color: rgb(217, 209, 214);
+  transition: 0.3s;
+}
