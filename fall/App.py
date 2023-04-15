@@ -185,7 +185,6 @@ class main:
             self.cam.__del__()
         self.master.destroy()
 
-
 root = tk.Tk()
 app = main(root)
 root.mainloop()
