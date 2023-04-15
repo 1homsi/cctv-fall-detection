@@ -1,126 +1,121 @@
 body {
-  background-image: url("../images/servers.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 auto;
-  height: 100vh;
-  overflow: hidden;
+  background-color: #f2f2f2;
+  color: #212529;
+  margin: 0;
 }
-#image-container {
-  z-index: -1;
-  background-color: aliceblue;
-  border-radius: 10px;
+
+#NavBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  background-color: #cacaca;
+  border-bottom: 1px solid #bdbcbc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+#NavBar h1 {
+  font-size: 40px;
+  font-weight: bolder;
   margin-left: 20px;
-  width: 550px;
-  height: 400px;
-}
-
-.detectbtn inside {
-  width: 150px;
-  height: 50px;
-  margin: 5px;
   cursor: pointer;
-  background-color: dimgray;
-  color: aliceblue;
-  border: 1px solid black;
-  outline: none;
-  transition: 1s ease-in-out;
-  font-family: "Lato", sans-serif;
-}
-.detectbtn inside {
-  width: 150px;
-  height: 50px;
-  margin: 5px;
-  cursor: pointer;
-  background-color: dimgray;
-  color: aliceblue;
-  border: 1px solid black;
-  outline: none;
-  transition: 1s ease-in-out;
-  font-family: "Lato", sans-serif;
-}
-.detectbtn right {
-  margin-left: 4px;
 }
 
-/* .detectbtn:hover {
-  transition: 1s ease-in-out;
-  background: #4f95da;
-} */
-
-/* .detectbtn:hover svg {
-  stroke-dashoffset: -480;
-} */
-
-.detectbtn span {
-  color: white;
-  font-size: 18px;
-  font-weight: 100;
+#NavBar div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
 }
+
+#NavBar a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+
+#NavBar a:hover {
+  color: #000;
+}
+
+#items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 20px; 
+  width: 650px;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+
+#items a {
+  border-radius: 8px;
+  background-color: #434242;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 45px 40px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+#items a:hover {
+  background-color: #484141;
+  transition: 0.3s;
+  animation: bounceUp 0.9s;
+}
+
+@keyframes bounceUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 
 #bottom {
   position: fixed;
-  bottom: 0%;
-  /* margin-bottom: 20px; */
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-#bottom .detectbtn {
-  width: 150px;
-  height: 50px;
-  margin: 5px;
-  cursor: pointer;
-  background-color: dimgray;
-  color: aliceblue;
-  border: 1px solid black;
-  outline: none;
-  transition: 1s ease-in-out;
-  font-family: "Lato", sans-serif;
+  bottom: 0;
 }
 
-.icons .home {
-  margin-right: 0pt;
-  padding: 2pt;
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  background-color: lavender;
-  cursor: pointer;
-}
-.icons .settings {
-  margin-right: 0pt;
-  padding: 2pt;
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  background-color: lavender;
-  cursor: pointer;
-}
-.title h1 {
+button {
+  border-radius: 6px;
+  background-color: #000;
+  border-color: #000;
+  color: white;
+  padding: 15px 32px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
 }
 
-/* button {
-    border-radius: 6px;
-    background-color: #000;
-    border-color: #000;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bolder;
-} */
-
-/* button:hover {
+button:hover {
   background-color: white;
   color: black;
   border: 2px solid #000;
-} */
+}
 
-/* #image-container {
+#image-container {
   display: block;
   text-align: center;
 }
@@ -131,4 +126,4 @@ body {
 
 #main {
   text-align: center;
-} */
+}

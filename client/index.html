@@ -4,57 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Sentinel WatchGuard</title>
-  <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="icon" type="image/x-icon" href="/Images/Nassim.jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <script type="text/javascript" src="eel.js"></script>
 <script type="text/javascript" src="app.js"></script>
 
 <body>
-  <div class="icons">
-    <a href="./index.html">
-      <img src="./images/home.png" alt="home" class="home">
+  <div id="NavBar">
+    <a>
+      <h1>Sentinal WatchGuard</h1>
     </a>
-    <a href="./pages/settings.html">
-      <img src="./images/settings.png" alt="settings" class="settings">
-    </a>
-  </div>
-  <div class="title">
-    <h1>Sentinel WatchGuard</h1>
-  </div>
-  <div id="bottom">
-    <!-- <button class="btn">
-      <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-      </svg>
-      <span>HOVER ME</span>
-    </button> -->
-    
-    <a href="./pages/emotion.html" class=""><button class="detectbtn" class="left">
-        Emotion Detection
-      </button></a>
-    <a href="./pages/fall.html" class="">
-      <button class="detectbtn" class="right">
-        Fall Detection
-      </button>
+    <div>
+      <a href="./index.html">
+        <i class="fa-solid fa-house"></i>
       </a>
-  </div>
-  <!-- sidebutton/website code -->
-  <div class="sidebutton">
-    <div class="wrapper">
-      <div class="link_wrapper">
-        <a href="#">Website</a>
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-            <path
-              d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
-          </svg>
-        </div>
-      </div>
-
+      <a href="./pages/train.html">
+        <i class="fa-solid fa-chart-line"></i>
+      </a>
+      <a href="./pages/emotion.html">
+        <i class="fa-solid fa-link"></i>
+      </a>
+      <a href="./pages/settings.html">
+        <i class="fa-solid fa-cog"></i>
+      </a>
     </div>
+  </div>
+
+  <div id="items">
+    <a href="./pages/emotion.html" class="">
+      Emotion Detection
+    </a>
+    <a href="./pages/fall.html" class="">
+      Fall Detection
+    </a>
+    <a href="./pages/fall.html" class="">
+      Fall + Emotion Detection
+    </a>
+    <a href="./pages/fall.html" class="">
+      Documentation
+    </a>
   </div>
 </body>
 
