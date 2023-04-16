@@ -175,7 +175,7 @@ button:hover {
   display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 200px;
   height: 100%;
   background-color: #00ADB5;
@@ -183,6 +183,7 @@ button:hover {
   padding: 20px;
   transition: all 0.3s ease;
   animation: slideIn 0.8s ease;
+  box-shadow: -2px 0px 25px 0px rgba(0,0,0,0.75);
 }
 
 @keyframes slideIn {
@@ -207,7 +208,6 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  margin-inline: 10px;
 }
 
 #Menu a {
@@ -216,6 +216,8 @@ button:hover {
   font-size: 16px;
   font-weight: bolder;
   margin-bottom: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 10px;
 }
 
 #Menu a:hover {
@@ -228,7 +230,6 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .title h1 {
@@ -243,5 +244,49 @@ button:hover {
   width: 25%;
   height: 2px;
   background-color: #00ADB5;
+  margin-bottom: 20px;
 }
 
+.fallInputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.fallInputs label {
+  margin-left: 0;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #222831;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#SourceSelect {
+  height: auto;
+  border-radius: 15px;
+  border: 1.5px solid #222831;
+  background-color: #EEEEEE;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #222831;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+
+#SourceSelect option {
+  cursor: pointer;
+}
+
+#Menu i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+  color: #222831;
+  cursor: pointer;
+}
