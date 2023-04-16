@@ -16,7 +16,7 @@
 <body>
   <div id="NavBar">
     <a>
-      <h1>Sentinal WatchGuard</h1>
+      <h1>Sentinel WatchGuard</h1>
     </a>
     <div>
       <a href="../index.html">
@@ -26,26 +26,24 @@
         <i class="fa-solid fa-chart-line"></i>
       </a>
       <a href="./pages/emotion.html">
-        <i class="fa-solid fa-link"></i>
-      </a>
-      <a href="./pages/settings.html">
-        <i class="fa-solid fa-cog"></i>
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
       </a>
       <div id="menu-toggle" onclick="handleMenu()">
-        <i class="fas fa-bars" id="open"></i>
+        <i class="fa-solid fa-cog" id="open"></i>
         <i class="fa-solid fa-x" id="close"></i>
       </div>
     </div>
   </div>
   <div class="title">
     <h1>Emotion Detection</h1>
+    <div class="line"></div>
   </div>
   <div id="image-container">
     <img id="bg" alt="">
   </div>
   <div id="bottom">
     <button class="detectbtn" onclick="py_video()">Open feed</button>
-    <button class="detectbtn" style="margin-left: 10px;" onclick="closeConnection()">Close feed</button>
+    <button class="detectbtn" onclick="closeConnection()">Close feed</button>
   </div>
 </body>
 
