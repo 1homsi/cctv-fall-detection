@@ -17,7 +17,7 @@ const closeConnection = () => {
 };
 
 const closeFallConnection = () => {
-    eel.CloseDetector()();
+    eel.CloseDetector("0")();
 };
 
 const TrainModel = async () => {
