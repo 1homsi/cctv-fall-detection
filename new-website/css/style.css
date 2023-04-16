@@ -19332,6 +19332,12 @@ h1 + .tabs-line {
   transform: scale(1.2);
   transform-origin: 0 center;
   z-index: 1;
+  overflow: hidden;
+  align-items: center;
+}
+.box-device img{
+  width: 340px;
+  height: 400;
 }
 
 .owl-style-1 .owl-item.active + .owl-item.active {
