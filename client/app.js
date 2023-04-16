@@ -1,5 +1,4 @@
 const input = document.getElementsByName("iterations");
-const select = document.getElementById("SourceSelect");
 
 const py_video = () => {
     eel.video_feed()();
@@ -10,11 +9,13 @@ const closeConnection = () => {
 };
 
 const py_video_fall = () => {
-    let selected = select.value;
-    eel.detectFallFeed(selected)();
+    const select = document.getElementById("SourceSelect");
+    console.log(select.value);
+    eel.detectFallFeed(select.value)();
 };
 
 const closeFallConnection = () => {
+    const select = document.getElementById("SourceSelect");
     let selected = select.value;
     eel.CloseDetector(selected)();
 };
@@ -31,7 +32,6 @@ function updateImageSrc(val) {
     let elem = document.getElementById("bg");
     elem.src = "data:image/jpeg;base64," + val;
 }
-
 
 function handleMenu(e) {
     let menu = document.getElementById("Menu");
