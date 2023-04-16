@@ -6640,7 +6640,8 @@ textarea.textarea-lg {
 }
 
 .thumbnail-classic-figure img {
-  width: 100%;
+  width: 420px;
+  height: 350px;
   transition: all 0.3s ease;
 }
 
@@ -10334,7 +10335,7 @@ h2.title-modern > span {
 
 .team-classic-figure img {
   width: 100%;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   transition: all 0.3s ease;
 }
 
@@ -10343,10 +10344,11 @@ h2.title-modern > span {
   overflow: hidden;
   left: 0;
   bottom: 27px;
-  width: 80%;
-  min-width: 300px;
+  width: 60%;
+  width: 215px;
+  height: 70px;
   margin-left: -25px;
-  padding: 15px 20px 15px 50px;
+  padding: 10px 10px 10px 30px;
   transition: all 0.3s ease;
   z-index: 1;
 }
@@ -10366,6 +10368,8 @@ h2.title-modern > span {
 
 .team-classic-name {
   color: #ffffff;
+  font-size: 17px;
+  width:200px;
 }
 
 .team-classic-name a,
@@ -10382,7 +10386,8 @@ h2.title-modern > span {
   line-height: 1.5;
   color: #ffffff;
   letter-spacing: 0.025em;
-  font-weight: 400;
+  font-weight: 300;
+  width:200px;
 }
 
 * + .team-classic-status {
@@ -10396,7 +10401,7 @@ h2.title-modern > span {
   .team-classic-lg .team-classic-caption {
     bottom: 44px;
     margin-left: -30px;
-    padding: 15px 20px 15px 85px;
+    padding: 15px 20px 15px 65px;
   }
 }
 
@@ -10720,24 +10725,25 @@ h2.title-modern > span {
 
 .clients-classic {
   position: relative;
-  display: block;
-  width: 200px;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;
+  display:flex;
+  align-items: center;
+  width: 170px;
+  height: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
   background: #ffffff;
   border: 1px solid #e1e1e1;
   transition: all 0.3s ease-in-out;
 }
 
 .clients-classic::before {
-  position: absolute;
-  content: "";
+  /* position: absolute; */
+  /* content: "";
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-  border: 1px solid transparent;
+  left: 0; */
+  /* border: 1px solid transparent; */
   transition: all 0.3s ease;
   will-change: transform;
 }
@@ -10745,7 +10751,7 @@ h2.title-modern > span {
 .clients-classic img {
   width: 100%;
   height: 100%;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 @media (min-width: 992px) {
@@ -10753,16 +10759,16 @@ h2.title-modern > span {
     will-change: transform;
     transition: all 0.3s ease;
   }
-  .desktop .clients-classic:hover {
+  /* .desktop .clients-classic:hover {
     border-color: #151515;
-  }
+  } */
   .desktop .clients-classic:hover::before {
     transform: scale(0.94, 0.9);
-    border-color: #151515;
+    /* border-color: #151515; */
   }
   .desktop .clients-classic:hover img {
     opacity: 1;
-    transform: scale(0.9);
+    transform: scale(1.1);
   }
   .desktop .context-dark .clients-classic:hover,
   .desktop .bg-gray-dark .clients-classic:hover,
@@ -20508,6 +20514,7 @@ body:not(.lg-from-hash)
 .parallax-container {
   position: relative;
   overflow: hidden;
+  height: 350px;
 }
 
 .material-parallax {
@@ -20531,6 +20538,7 @@ body:not(.lg-from-hash)
   min-width: 101%;
   max-width: none;
   min-height: 101%;
+  filter: blur(2px);
   transform: translate3d(-50%, 0, 0);
 }
 
