@@ -247,7 +247,19 @@ p [style*="max-width"] {
 * Brand
 */
 .brand {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#mainTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+  color: #151515;
+  text-transform: uppercase;
 }
 
 .brand .brand-logo-light {
