@@ -12,7 +12,12 @@ from fall.fall import *
 # from FallEmotion.mix import *
 
 # Disable the ability to resize the window and set the window size to 800x600
-window_size = (800, 600)
+window_size = (900, 650)
+
+def close_callback(route, websockets):
+    if not websockets:
+        print('Bye!')
+        exit()
 
 def show_error(title, msg):
     root = Tk() # create a tkinter window
@@ -67,7 +72,16 @@ if __name__ == "__main__":
     # Start the server 
     try:
         eel.init('client') # path to project folder 
-        eel.start('index.html', size=window_size)
+        eel.start('index.html',
+                        host='localhost', 
+                        port=27000, 
+                        block=True, 
+                        size=window_size, 
+                        position=(0,0), 
+                        disable_cache=True, 
+                        close_callback=close_callback, 
+                        cmdline_args=[
+                                '--incognito', '--no-experiments'])
     except Exception as e: 
         err_msg = 'Could not launch a local server' # error message
         logging.error('{}\n{}'.format(err_msg, e.args))
