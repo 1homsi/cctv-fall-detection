@@ -29,10 +29,9 @@
         <i class="fa-solid fa-link"></i>
       </a>
       <a href="./pages/settings.html">
-        <i class="fa-solid fa-cog"></i>
       </a>
       <div id="menu-toggle" onclick="handleMenu()">
-        <i class="fas fa-bars" id="open"></i>
+        <i class="fa-solid fa-cog" id="open"></i>
         <i class="fa-solid fa-x" id="close"></i>
       </div>
     </div>
@@ -48,6 +47,32 @@
     <button class="detectbtn inside" onclick="py_video_fall()">Open Fall feed</button>
     <button class="detectbtn inside" onclick="closeFallConnection()">Close feed</button>
 
+  </div>
+
+
+  <div id="Menu">
+    <h1>Settings</h1>
+    <div>
+      <div>
+        <label>Fall Detection Input</label>
+        <select id="SourceSelect">
+          <option value="0" selected>Camera</option>
+          <option value="1">Usb Camera</option>
+          <option value="2">Ip Camera</option>
+          <option value="3">rtsp cam</option>
+        </select>
+      </div>
+
+      <a href="./pages/fall.html" class="">
+        Fall Detection
+      </a>
+      <a href="./pages/fall.html" class="">
+        Sentinel Detection
+      </a>
+      <a href="./pages/fall.html" class="">
+        Documentation
+      </a>
+    </div>
   </div>
 </body>
 

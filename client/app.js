@@ -1,23 +1,23 @@
 const input = document.getElementsByName("iterations");
 
-
-
-
-
 const py_video = () => {
     eel.video_feed()();
-};
-
-const py_video_fall = () => {
-    eel.detectFallFeed("0")();
 };
 
 const closeConnection = () => {
     eel.Close()();
 };
 
+const py_video_fall = () => {
+    const select = document.getElementById("SourceSelect");
+    console.log(select.value);
+    eel.detectFallFeed(select.value)();
+};
+
 const closeFallConnection = () => {
-    eel.CloseDetector()();
+    const select = document.getElementById("SourceSelect");
+    let selected = select.value;
+    eel.CloseDetector(selected)();
 };
 
 const TrainModel = async () => {
@@ -32,7 +32,6 @@ function updateImageSrc(val) {
     let elem = document.getElementById("bg");
     elem.src = "data:image/jpeg;base64," + val;
 }
-
 
 function handleMenu(e) {
     let menu = document.getElementById("Menu");
