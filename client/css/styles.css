@@ -121,7 +121,8 @@ body {
   gap: 20px;
   position: fixed;
   bottom: 20px;
-  left: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 button {
@@ -145,13 +146,9 @@ button:hover {
 }
 
 #image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   width: 50%;
   height: 40%;
+  margin: 0 auto;
 }
 
 #image-container img {

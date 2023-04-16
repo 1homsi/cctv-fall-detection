@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     .ie-panel {
       display: none;
@@ -64,8 +67,15 @@
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images/logo2-cropped.png"
-                        alt="" width="230" height="50" /></a></div>
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html">
+                      <div class="brand">
+                        <img id="logo" src="images/logo2-cropped.png" alt="" />
+                        <span id="mainTitle">
+                          Sentinel Watchguard
+                          </spanid>
+                      </div>
+                    </a>
+                  </div>
                 </div>
                 <div class="rd-navbar-main-element">
                   <div class="rd-navbar-nav-wrap">
@@ -168,7 +178,8 @@
                   <div>
                     <h3 class="box-icon-modern-big-title">What We Offer</h3>
                     <div class="box-icon-modern-decor"></div><a class="button button-primary button-ujarak"
-                      href="#">View All Services</a>
+                      href="#">View
+                      All Services</a>
                   </div>
                 </article>
               </div>
@@ -199,8 +210,9 @@
                   <div class="box-icon-modern-icon linearicons-outbox"></div>
                   <h5 class="box-icon-modern-title"><a href="#">SENTINEL<br>DETECTION</a></h5>
                   <div class="box-icon-modern-decor"></div>
-                  <p class="box-icon-modern-text">A bundle were both Emotion Detection and fall detection in one place.
-                  </p>
+                  <p class="box-icon-modern-text">Both Fall and Emotion Detection are combined in this Detection to
+                    provide a comprehensive solution for monitoring the safety and
+                    well-being of your loved ones.</p>
                 </article>
               </div>
             </div>
@@ -210,7 +222,7 @@
     </section>
 
     <!-- Cta-->
-    <section class="section section-fluid bg-default">
+    <!-- <section class="section section-fluid bg-default">
       <div class="parallax-container" data-parallax-img="images/wide-cropped2.jpg">
         <div class="parallax-content section-xl context-dark bg-overlay-68 bg-mobile-overlay">
           <div class="container">
@@ -226,15 +238,15 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Latest Projects-->
     <section class="section section-sm section-fluid bg-default text-center" id="projects">
       <div class="container-fluid">
         <h2 class="wow fadeInLeft">Where can the Detection be used?</h2>
-        <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">In our portfolio, you can browse the latest products
+        <!-- <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">In our portfolio, you can browse the latest products
           developed for our clients for different corporate purposes. Our qualified team of interface designers and
-          software developers is always ready to create something unique for you.</p>
+          software developers is always ready to create something unique for you.</p> -->
         <!-- <div class="isotope-filters isotope-filters-horizontal">
           <button
             class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha"
@@ -411,7 +423,7 @@
           <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4">
             <div class="text-width-extra-small offset-top-lg-24 wow fadeInUp">
               <h3 class="title-decoration-lines-left">Security and Accuracy at its Finest</h3>
-              <p class="text-gray-500">Sentinel Watchguard has a team of highly experienced app designers and developers
+              <p class="text-gray-500">Sentinel Watchguard has a team of highly experienced developers
                 creating unique software for you.</p><a class="button button-secondary button-pipaluk" href="#">Get in
                 touch</a>
             </div>
@@ -544,13 +556,13 @@
                   data-toggle="tab">02</a></li>
               <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-3"
                   data-toggle="tab">03</a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-4"
-                  data-toggle="tab">04</a></li>
+              <!-- <li class="nav-item" role="presentation"><a class="nav-link nav-link-big" href="#tabs-6-4"
+                  data-toggle="tab">04</a></li> -->
             </ul>
             <!-- Tab panes-->
             <div class="tab-content">
               <div class="tab-pane fade show active" id="tabs-6-1">
-                <h5 class="font-weight-normal">FREE APPS</h5>
+                <h5 class="font-weight-normal">Emotion Detection</h5>
                 <p>We regularly upload new free apps to our website, which is fully accessible to our clients and
                   subscribers. You can also find out about free apps in our blog.</p>
                 <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta"
@@ -558,7 +570,7 @@
                     href="#">Learn More</a></div>
               </div>
               <div class="tab-pane fade" id="tabs-6-2">
-                <h5 class="font-weight-normal">GET SOCIAL</h5>
+                <h5 class="font-weight-normal">Fall Detection</h5>
                 <p>Every app we develop has built-in social support that allows you to stay connected to your accounts
                   on Facebook, Instagram, Twitter and other networks.</p>
                 <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta"
@@ -566,21 +578,21 @@
                     href="#">Learn More</a></div>
               </div>
               <div class="tab-pane fade" id="tabs-6-3">
-                <h5 class="font-weight-normal">CUSTOMER SERVICE</h5>
+                <h5 class="font-weight-normal">Sentinal Detection</h5>
                 <p>Every customer of RatherApp can get access to our friendly and qualified 24/7 support via chat or
                   phone. Fell free to ask us any question!</p>
                 <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta"
                     data-toggle="modal">Get in touch</a><a class="button button-default-outline button-wapasha"
                     href="#">Learn More</a></div>
               </div>
-              <div class="tab-pane fade" id="tabs-6-4">
+              <!-- <div class="tab-pane fade" id="tabs-6-4">
                 <h5 class="font-weight-normal">GREAT USABILITY</h5>
                 <p>All our apps are designed to have great usability in order to easily operate our applications. That
                   is why our software has high ratings and lots of awards.</p>
                 <div class="group-sm group-middle"><a class="button button-secondary button-pipaluk" href="#modalCta"
                     data-toggle="modal">Get in touch</a><a class="button button-default-outline button-wapasha"
                     href="#">Learn More</a></div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -769,7 +781,7 @@
         <div class="col-sm-8 col-md-6 col-lg-4">
           <article class="box-contacts">
             <div class="box-contacts-body">
-              <div class="box-contacts-icon fl-bigmug-line-cellphone55"></div>
+              <i class="box-contacts-icon fa-solid fa-mobile"></i>
               <div class="box-contacts-decor"></div>
               <p class="box-contacts-link"><a href="tel:#">+961 81-915-734</a></p>
               <p class="box-contacts-link"><a href="tel:#">+961 91-231-038</a></p>
@@ -779,7 +791,7 @@
         <div class="col-sm-8 col-md-6 col-lg-4">
           <article class="box-contacts">
             <div class="box-contacts-body">
-              <div class="box-contacts-icon fl-bigmug-line-up104"></div>
+              <i class="box-contacts-icon fa-solid fa-house"></i>
               <div class="box-contacts-decor"></div>
               <p class="box-contacts-link"><a href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a></p>
             </div>
@@ -788,7 +800,7 @@
         <div class="col-sm-8 col-md-6 col-lg-4">
           <article class="box-contacts">
             <div class="box-contacts-body">
-              <div class="box-contacts-icon fl-bigmug-line-chat55"></div>
+              <i class="box-contacts-icon fa-solid fa-message"></i>
               <div class="box-contacts-decor"></div>
               <p class="box-contacts-link"><a href="mailto:#">mail@Sentinel.org</a></p>
               <p class="box-contacts-link"><a href="mailto:#">info@Sentinel.org</a></p>
@@ -864,11 +876,9 @@
       <div class="container-fluid">
         <div class="footer-minimal-inset oh">
           <ul class="footer-list-category-2">
-            <li><a href="#">UI Design</a></li>
-            <li><a href="#">Windows/Mac OS Apps</a></li>
-            <li><a href="#">Android/iOS Apps</a></li>
-            <li><a href="#">Cloud Solutions</a></li>
-            <li><a href="#">Customer Support</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
           </ul>
         </div>
         <div class="footer-minimal-bottom-panel text-sm-left">
@@ -889,8 +899,8 @@
                   Watchguard</span>
               </p>
             </div>
-            <div class="col-sm-6 col-md-4 text-md-right"><span>All rights reserved.</span> <span>Design&nbsp;by&nbsp;<a
-                  href="">Sentinel Watchguard</a></span>
+            <div class="col-sm-6 col-md-4 text-md-right"><span>All rights reserved.</span>
+              Sentinel Watchguard</span>
             </div>
           </div>
         </div>

@@ -25,13 +25,13 @@
 }
 
 .landing-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0, 31vh);
   color: #fff;
-  text-align: center;
+  width: 50%;
+  margin: 0 auto;
 }
+
+
 
 .landing-text h1 {
   font-size: 3rem;
@@ -69,9 +69,9 @@
 }
 
 .landing-text h4 {
-  font-size: 1.2rem;
-  color: #000000;
-  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000;
+  font-weight:500;
   text-align: center;
 }
 
@@ -84,10 +84,11 @@
   z-index: -1;
 }
 .always {
-  margin-top: 200px;
-  color: black;
+  color: #6689ff;
   font-weight: bold;
   text-align: center;
+  font-size: 3.5rem;
+  transform: translate(0, 29vh);
 }
 /* .typer {
   margin-top: 40px;
@@ -99,4 +100,13 @@
 }
 #sectiont{
   font-weight: bold;
+  text-align: center;
+}
+
+
+#logo {
+  width: 13%;
+  height: 13%;
+  object-fit: cover;
+  margin: 0;
 }
