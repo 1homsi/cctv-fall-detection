@@ -1,23 +1,22 @@
 const input = document.getElementsByName("iterations");
-
-
-
-
+const select = document.getElementById("SourceSelect");
 
 const py_video = () => {
     eel.video_feed()();
-};
-
-const py_video_fall = () => {
-    eel.detectFallFeed("0")();
 };
 
 const closeConnection = () => {
     eel.Close()();
 };
 
+const py_video_fall = () => {
+    let selected = select.value;
+    eel.detectFallFeed(selected)();
+};
+
 const closeFallConnection = () => {
-    eel.CloseDetector("0")();
+    let selected = select.value;
+    eel.CloseDetector(selected)();
 };
 
 const TrainModel = async () => {

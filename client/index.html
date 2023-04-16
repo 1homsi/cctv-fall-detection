@@ -28,11 +28,8 @@
       <a href="./pages/emotion.html">
         <i class="fa-solid fa-arrow-up-right-from-square"></i>
       </a>
-      <a href="./pages/settings.html">
-        <i class="fa-solid fa-cog"></i>
-      </a>
       <div id="menu-toggle" onclick="handleMenu()">
-        <i class="fas fa-bars" id="open"></i>
+        <i class="fa-solid fa-cog" id="open"></i>
         <i class="fa-solid fa-x" id="close"></i>
       </div>
     </div>
@@ -54,11 +51,18 @@
   </div>
 
   <div id="Menu">
-    <h1>Menu</h1>
+    <h1>Settings</h1>
     <div>
-      <a href="./pages/emotion.html" class="">
-        Emotion Detection
-      </a>
+      <div>
+        <label>Fall Detection Input</label>
+        <select id="SourceSelect">
+          <option value="0" selected>Camera</option>
+          <option value="1">Usb Camera</option>
+          <option value="2">Ip Camera</option>
+          <option value="3">rtsp cam</option>
+        </select>
+      </div>
+
       <a href="./pages/fall.html" class="">
         Fall Detection
       </a>
