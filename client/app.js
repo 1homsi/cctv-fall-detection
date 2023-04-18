@@ -1,5 +1,9 @@
 const input = document.getElementsByName("iterations");
 
+window.onresize = function () {
+    window.resizeTo(900, 650);
+};
+
 const py_video = () => {
     eel.video_feed()();
 };

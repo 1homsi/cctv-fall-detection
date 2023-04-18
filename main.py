@@ -66,7 +66,7 @@ def detectFallFeed(source):
         
 @eel.expose
 def CloseDetector(source):
-    FallDetector(source).close()   # close the camera
+    FallDetector(source).isOpened = False;   # close the camera
         
 if __name__ == "__main__":
     # Start the server 
@@ -74,7 +74,6 @@ if __name__ == "__main__":
         eel.init('client') # path to project folder 
         eel.start('index.html',
                         size=window_size, 
-                        position=(200,200), 
                       )
     except Exception as e: 
         err_msg = 'Could not launch a local server' # error message

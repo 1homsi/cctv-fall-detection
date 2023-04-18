@@ -14,8 +14,8 @@ import sys
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' #to suppress some warnings
 
-if not os.path.exists('emotion_data.csv'): # if file does not exist write header
-    with open('emotion_data.csv', 'w', newline='') as file:
+if not os.path.exists('./client/data/emotion_data.csv'): # if file does not exist write header
+    with open('./client/data/emotion_data.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(["frame", "emotion", "pixels", "time stamp"])
       
@@ -118,7 +118,7 @@ class VideoCamera(object):
                 maxindex = int(np.argmax(prediction)) # get the index of the largest value
                 cv2.putText(frame, emotion_dict[maxindex], (x+20, y-60), 
                    cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 2.55, 255), 2, cv2.LINE_AA) # write the emotion text above rectangle
-                with open('emotion_data.csv', 'a', newline='') as file:
+                with open('./client/data/emotion_data.csv', 'a', newline='') as file:
                     writer = csv.writer(file)
                     writer.writerow([frame, emotion_dict[maxindex], roi_gray, datetime.datetime.now()])
             ret, jpeg = cv2.imencode('.jpg', frame) # encode the frame into jpeg

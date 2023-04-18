@@ -120,7 +120,7 @@ body {
   justify-content: center;
   gap: 20px;
   position: fixed;
-  bottom: 20px;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -146,8 +146,14 @@ button:hover {
 }
 
 #image-container {
-  width: 50%;
+  width:50%;
   height: 40%;
+  margin: 0 auto;
+}
+
+#image-container-fall {
+  width:50%;
+  height: 30%;
   margin: 0 auto;
 }
 
@@ -175,7 +181,7 @@ button:hover {
   display: none;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 200px;
   height: 100%;
   background-color: #00ADB5;
@@ -276,7 +282,10 @@ button:hover {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   outline: none;
   cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
+
 
 #SourceSelect option {
   cursor: pointer;

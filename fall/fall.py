@@ -35,6 +35,9 @@ def kpt2bbox(kpt, ex=20):
     return np.array((kpt[:, 0].min() - ex, kpt[:, 1].min() - ex,
                      kpt[:, 0].max() + ex, kpt[:, 1].max() + ex))   # (left, top, right, bottom)
 
+
+
+
 class FallDetector:
     isOpened = True
     def __init__(self, source):
@@ -43,10 +46,15 @@ class FallDetector:
         self.detection_input_size = 384  # 320, 416, 512, 608.
         self.pose_input_size = "224x160"  # 256x192, 384x288, 512x384, 640x480, 736x736, 800x608.
         self.pose_backbone = "resnet50" # resnet50, resnet101, resnet152.
-        self.show_detected = False  # show all bounding box from detection.
         self.show_skeleton = True  # show skeleton pose.
         self.save_out = "fall.mp4v" # Save display to video file.
         self.device = "cuda"  # cpu or cuda 
+        
+        if not os.path.exists('/client/data/fall_data.csv'): # if file does not exist write header
+            with open('fall_data.csv', 'w', newline='') as file:
+                csvWriter = csv.writer(file)
+                csvWriter.writerow(["Frame", "Fall", "Fall Prob", "Fall Prob Threshold", "Time Stamp"])   
+        
         # DETECTION MODEL.
         inp_dets = self.detection_input_size
         self.detect_model = TinyYOLOv3_onecls(inp_dets, device=self.device)
@@ -123,11 +131,6 @@ class FallDetector:
                                                         ps['kp_score'].numpy()), axis=1),   # (x, y, score)
                                         ps['kp_score'].mean().numpy()) for ps in poses] # score
 
-                # VISUALIZE.
-                if self.show_detected:  # Show all detected bbox.
-                    for bb in detected[:, 0:5]: # (x1, y1, x2, y2, score)
-                        frame = cv2.rectangle(frame, (bb[0], bb[1]), (bb[2], bb[3]), (0, 0, 255), 1)    # Draw bbox.
-
             # Update tracks by matching each track information of current and previous frame or
             # create a new track if no matched.
             self.tracker.update(detections)  # Update tracks.
@@ -155,14 +158,9 @@ class FallDetector:
                     action = '{}: {:.2f}%'.format(action_name, out[0].max() * 100)  # Set action text.
                     if action_name == 'Fall Down':  # Set color to red if action is fall down.
                         clr = (255, 0, 0)   # Set color to red.
-                        if not os.path.exists('fall_data.csv'): # if file does not exist write header
-                            with open('fall_data.csv', 'w', newline='') as file:
-                                csvWriter = csv.writer(file)
-                                csvWriter.writerow(["Frame", "Fall", "Fall Prob", "Fall Prob Threshold", "Time Stamp"])      
-                        else:
-                            with open('fall_data.csv', 'a', newline='') as file: # a for append
-                                csvWriter = csv.writer(file)
-                                csvWriter.writerow([self.f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
+                        with open('fall_data.csv', 'a', newline='') as file: # a for append
+                            csvWriter = csv.writer(file)
+                            csvWriter.writerow([self.f, action_name, out[0].max(), 0.5, datetime.datetime.now()])
                     elif action_name == 'Lying Down':   # Set color to yellow if action is lying down.
                         clr = (255, 200, 0)
                         with open('extra_data.csv', 'a', newline='') as file:
@@ -213,9 +211,12 @@ class FallDetector:
             if isOpened:
                 return jpeg.tobytes()   # Return frame.
 
-            if self.stop:
-                self.close()
-                
+            if isOpened == False:
+                self.cam.stop()  # Stop camera loader.
+                if self.outvid:  # Release video writer.
+                    self.writer.release()    # Release video writer.
+                self.stop = True    # Stop thread.
+                        
     def close(self):
     # Clear resource.
         self.cam.stop()  # Stop camera loader.
