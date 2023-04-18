@@ -50,7 +50,7 @@ class FallDetector:
         self.save_out = "fall.mp4v" # Save display to video file.
         self.device = "cuda"  # cpu or cuda 
         
-        if not os.path.exists('/client/data/fall_data.csv'): # if file does not exist write header
+        if not os.path.exists('fall_data.csv'): # if file does not exist write header
             with open('fall_data.csv', 'w', newline='') as file:
                 csvWriter = csv.writer(file)
                 csvWriter.writerow(["Frame", "Fall", "Fall Prob", "Fall Prob Threshold", "Time Stamp"])   
