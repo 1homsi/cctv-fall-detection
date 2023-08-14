@@ -128,5 +128,4 @@ class VideoCamera(object):
             return None # return None if frame is empty
 
     def close_camera(self):
-        isOpened = False
         self.video.release() # release the camera
